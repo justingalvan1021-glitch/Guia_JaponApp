@@ -1,0 +1,11 @@
+{
+  "name": "JP26 — Japan Adventure",
+  "short_name": "JP26",
+  "description": "Guía personalizada del viaje de Japón 2026.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#07090e",
+  "theme_color": "#080b12",
+  "lang": "es"
+}

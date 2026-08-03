@@ -19,7 +19,7 @@
   }
 
   function formatMXN(value) {
-    return new Intl.NumberFormat('es-MX', {style:'currency',currency:'MXN',maximumFractionDigits:2}).format(value);
+    return new Intl.NumberFormat('es-MX', {style:'currency',currency:'MXN',maximumFractionDigits:2}).format(value).replace('$', 'MX$');
   }
 
   function parseYen(text) {
@@ -40,7 +40,7 @@
   function createConversionLabel(amounts) {
     const usd = amounts.map(convertYen).join('–');
     const mxn = amounts.map(convertYenToMxn).join('–');
-    return 'JPY · USD ' + usd + ' · MXN ' + mxn;
+    return '≈ ' + usd + ' USD\n≈ ' + mxn;
   }
 
   function applyConversions(root) {

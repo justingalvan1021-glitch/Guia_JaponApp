@@ -20,7 +20,7 @@
 
   function usdLabel(value) {
     if (!window.JP26Currency) return '';
-    return `<span class="jp26-usd">JPY · USD ${window.JP26Currency.convertYen(value)} · MXN ${window.JP26Currency.convertYenToMxn(value)}</span>`;
+    return `<span class="jp26-usd">≈ ${window.JP26Currency.convertYen(value)} USD\n≈ ${window.JP26Currency.convertYenToMxn(value)}</span>`;
   }
 
   function timeLabel(value) {
@@ -83,7 +83,7 @@
       <article class="ios-day-hero" style="--day-image:url('${day.image}')">
         <div class="ios-day-hero-content">
           <div class="ios-date-heading"><h2>${escapeHTML(heading.date)}</h2><strong>${escapeHTML(heading.weekday)}</strong></div>
-          <span class="ios-day-label">DAY ${String(day.day).padStart(2,'0')} · ${escapeHTML(day.status)}</span>
+          <span class="ios-day-label">Day ${day.day} · ${escapeHTML(day.status)}</span>
           <h3 class="ios-day-title">${escapeHTML(day.title)}</h3>
           <p>${escapeHTML(day.subtitle)}</p>
           <div class="ios-day-actions">

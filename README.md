@@ -28,7 +28,7 @@ Se integraron mapas, imágenes y rutas visuales dentro de las 17 Master Cards de
 
 ## v4.1
 
-- Nuevo Home premium.
+- Nuevo Home con experiencia editorial.
 - Barra superior con hora de Tokio.
 - Countdown dinámico.
 - Timeline horizontal generado desde `data/itinerary.json`.

@@ -441,6 +441,9 @@ body:has(#survival :target) #survival{display:block}
 #survival .survival-block{display:none;animation:jp26Fade .24s ease}
 #survival .survival-block:target{display:block}
 body:has(#survival-frases :target) #survival-frases{display:block}
+body.jp26-japanese-route #inicio{display:none}
+body.jp26-japanese-route #survival{display:block}
+body.jp26-japanese-route #survival-frases{display:block}
 body:has(#survival :target) .nav a[href="#survival"]{
   background:linear-gradient(90deg,rgba(255,59,77,.22),rgba(72,167,255,.10));
   color:#fff;box-shadow:inset 3px 0 0 var(--red)

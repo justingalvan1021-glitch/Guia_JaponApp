@@ -57,6 +57,7 @@ function initializeBreadcrumbs() {
     document.querySelectorAll('.jp26-breadcrumbs').forEach(function (node) { node.remove(); });
     const activityId = document.body.dataset.activity;
     const id = activityId ? 'misiones' : (location.hash.slice(1) || 'inicio');
+    document.body.classList.toggle('jp26-japanese-route', id === 'survival-frases' || id.startsWith('phrase-'));
     document.querySelectorAll('.sidebar a[aria-current]').forEach(function (link) { link.removeAttribute('aria-current'); });
     const navId = id.startsWith('phrase-') ? 'survival-frases' : id;
     const activeLink = Array.from(document.querySelectorAll('.sidebar a[href^="#"]')).find(function (link) {

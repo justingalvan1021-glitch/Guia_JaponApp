@@ -5,8 +5,8 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
 <meta content="#080b12" name="theme-color"/>
-<title>JP26 v3.1 — Integrated City Maps</title>
-<link crossorigin="" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" rel="stylesheet"/><link href="css/style.css" rel="stylesheet"/><script crossorigin="" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><link href="manifest.json" rel="manifest"/><meta content="yes" name="apple-mobile-web-app-capable"/><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/><meta content="JP26" name="apple-mobile-web-app-title"/></head>
+<title>JP26 v4.1 — Japan Adventure OS</title>
+<link crossorigin="" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" rel="stylesheet"/><link href="css/style.css" rel="stylesheet"/><link href="css/dashboard.css" rel="stylesheet"/><script crossorigin="" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><link href="manifest.json" rel="manifest"/><meta content="yes" name="apple-mobile-web-app-capable"/><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/><meta content="JP26" name="apple-mobile-web-app-title"/></head>
 <body>
 <input class="menu-toggle" id="menu" type="checkbox"/>
 <label aria-label="Abrir menú" class="hamb" for="menu">☰</label>
@@ -30,94 +30,119 @@
 </aside>
 <main>
 <section class="app-section home-dashboard" id="inicio">
-<div class="home-shell">
-<div class="home-hero-card">
+<div class="v4-home">
+<header class="v4-topbar">
+<a class="v4-brand" href="#inicio">
+<span class="v4-brand-dot"></span>
+<span><b>JP26</b><small>Japan Adventure OS</small></span>
+</a>
+<div class="v4-live-strip">
+<span>🇯🇵 Japón</span>
+<span id="v4-tokyo-time">Tokyo --:--</span>
+<span class="v4-online-state">● Online</span>
+</div>
+</header>
+<div class="v4-home-shell">
+<section class="v4-hero">
+<div class="v4-hero-copy">
+<div class="eyebrow">15–27 OCT · THE CREW</div>
+<h2>JAPAN<br/><span>ADVENTURE</span></h2>
+<p>El centro de control personalizado para Justin, Huerta y Aram.</p>
+<div class="v4-hero-actions">
+<a class="btn" href="#itinerario">Continuar aventura</a>
+<a class="btn secondary" href="#tokio">Explorar Tokio</a>
+</div>
+</div>
+<div aria-hidden="true" class="v4-trip-orbit">
+<div class="v4-orbit-ring"></div>
+<div class="v4-orbit-core">JP26</div>
+<span class="v4-orbit-point p1">🗼</span>
+<span class="v4-orbit-point p2">🌃</span>
+<span class="v4-orbit-point p3">⛩</span>
+</div>
+</section>
+<section class="v4-status-grid">
+<article class="v4-status-card v4-next-card">
+<div class="v4-card-kicker">NEXT ADVENTURE</div>
+<div class="v4-next-layout">
 <div>
-<div class="eyebrow">Japan Adventure 2026</div>
-<h2>JP26</h2>
-<p>Justin · Huerta · Aram<br/>15–27 de octubre de 2026</p>
-<div class="crew-pills">
-<span class="pill">✈️ SLC → Tokio</span>
-<span class="pill">🗼 Tokio</span>
-<span class="pill">🌃 Osaka</span>
-<span class="pill">⛩ Kioto</span>
+<span class="v4-day-chip">DAY 03 · TOKYO</span>
+<h3>Old Tokyo<br/>+ Skytree</h3>
+<p>Asakusa · Nakamise · Sensō-ji · Akihabara</p>
+</div>
+<div class="v4-next-metrics">
+<span><b>07:30</b><small>Salida</small></span>
+<span><b>6</b><small>Paradas</small></span>
+<span><b>12–15 km</b><small>Caminata</small></span>
 </div>
 </div>
-<div class="version-chip">v1.0</div>
-</div>
-<div class="home-grid home-grid-main">
-<article class="dashboard-card next-mission-card">
-<div class="dashboard-kicker">Next mission</div>
-<div class="mission-emoji">🏮</div>
-<h3>Asakusa</h3>
-<p>17 OCT · 07:30 · Tokyo</p>
-<div class="mission-info-row">
-<span>👟 12–15 km</span><span>📷 Camera day</span><span>💴 ¥8,000 aprox.</span>
-</div>
-<a class="btn" href="#itinerario">▶ Abrir día</a>
+<a class="v4-continue" href="#asakusa-premium">Abrir Master Card <span>→</span></a>
 </article>
-<article class="dashboard-card progress-card">
-<div class="dashboard-kicker">Mission progress</div>
-<div class="progress-number">0 <span>/ 7</span></div>
-<div class="progress-track"><div class="progress-fill"></div></div>
-<div class="mission-mini-list">
-<span>🌊 DisneySea</span><span>🎢 Universal</span><span>🌈 teamLab</span>
-<span>🎬 Ghibli</span><span>🐠 Kaiyukan</span><span>🌆 Shibuya Sky</span><span>🚗 JDM</span>
+<article class="v4-status-card">
+<div class="v4-card-kicker">TRIP PROGRESS</div>
+<div class="v4-progress-value"><span id="v4-progress-days">0</span><small>/ 13 días</small></div>
+<div class="v4-progress-track"><div id="v4-progress-fill"></div></div>
+<p>Marca días y actividades durante el viaje para completar el progreso.</p>
+</article>
+<article class="v4-status-card v4-countdown-card">
+<div class="v4-card-kicker">COUNTDOWN</div>
+<div class="v4-countdown-number" id="v4-countdown">--</div>
+<strong>días para Japón</strong>
+<p>Salida desde Salt Lake City el 15 de octubre de 2026.</p>
+</article>
+</section>
+<section class="v4-section">
+<div class="v4-section-head">
+<div>
+<div class="eyebrow">LIVE ITINERARY</div>
+<h3>El viaje, día por día</h3>
 </div>
-</article>
+<a href="#itinerario">Ver itinerario completo →</a>
 </div>
-<div class="home-section-title"><span>👥</span><div><h3>The Crew</h3><p>Tres estilos, una sola misión.</p></div></div>
-<div class="home-grid g3">
-<article class="dashboard-card crew-card crew-justin">
-<div class="crew-avatar">📸</div><h3>Justin</h3><p>Planner · Photographer · Theme parks · Nightlife</p>
-<div class="crew-tags"><span>📷 Fotos</span><span>🎢 Parques</span><span>🍺 Fiesta</span></div>
-</article>
-<article class="dashboard-card crew-card crew-huerta">
-<div class="crew-avatar">🥾</div><h3>Huerta</h3><p>Runner tranquilo, hiking, Pokémon y compras innecesarias de alto valor emocional.</p>
-<div class="crew-tags"><span>🏃 Runner</span><span>🎮 Pokémon</span><span>💸 Shopping</span></div>
-</article>
-<article class="dashboard-card crew-card crew-aram">
-<div class="crew-avatar">🍜</div><h3>Aram</h3><p>Foodie relajado, experto en buena comida y listo para el desmadre cuando se requiere.</p>
-<div class="crew-tags"><span>🍣 Foodie</span><span>🍻 Nightlife</span><span>😎 Chill</span></div>
-</article>
+<div class="v4-timeline" id="v4-timeline"></div>
+</section>
+<section class="v4-section">
+<div class="v4-section-head">
+<div>
+<div class="eyebrow">CITY MISSIONS</div>
+<h3>Tres ciudades. Una misión.</h3>
 </div>
-<div class="home-section-title"><span>🏨</span><div><h3>Base Camps</h3><p>Los centros de operación del viaje.</p></div></div>
-<div class="home-grid g2">
-<article class="dashboard-card base-card">
-<div class="base-city">TOKYO</div><h3>ONE@Tokyo</h3><p>Oshiage · 16–20 OCT</p>
-<div class="base-meta"><span>🗼 Skytree</span><span>🚇 Oshiage</span><span>🏮 Asakusa cerca</span></div>
-<a class="btn secondary" href="#tokio">Abrir Tokio</a>
-</article>
-<article class="dashboard-card base-card osaka-base">
-<div class="base-city">OSAKA</div><h3>APA Hotel &amp; Resort Osaka Namba Ekimae Tower</h3><p>Namba · Check-in 20 OCT 3:00 PM · Check-out 27 OCT 10:00 AM</p>
-<div class="base-meta"><span>🍜 Dotonbori</span><span>🍺 Nightlife</span><span>🚇 Namba</span></div>
-<a class="btn secondary" href="#osaka">Abrir Osaka</a>
-</article>
 </div>
-<div class="home-section-title"><span>⚡</span><div><h3>Quick Access</h3><p>Lo más usado, a un toque.</p></div></div>
-<div class="quick-access-grid">
-<a class="quick-action" href="#tokio"><span>🗼</span><b>Tokio</b></a>
-<a class="quick-action" href="#osaka"><span>🌃</span><b>Osaka</b></a>
-<a class="quick-action" href="#kioto"><span>⛩</span><b>Kioto</b></a>
-<a class="quick-action" href="#itinerario"><span>🗓</span><b>Itinerario</b></a><a class="quick-action" href="#misiones"><span>🎯</span><b>Actividades</b></a><a class="quick-action" href="#survival"><span>🎒</span><b>Survival</b></a></div>
-<div class="home-grid home-grid-bottom">
-<article class="dashboard-card stats-card">
-<div class="dashboard-kicker">Trip stats</div>
-<div class="stats-grid">
-<div><strong>0</strong><span>km</span><small>👟 caminados</small></div>
-<div><strong>0</strong><span>x</span><small>🍜 ramen</small></div>
-<div><strong>0</strong><span>x</span><small>🎮 gachapon</small></div>
-<div><strong>0</strong><span>x</span><small>🌮 tacos</small></div>
+<div class="v4-city-grid">
+<a class="v4-city-card tokyo" href="#tokio">
+<span class="v4-city-index">01</span>
+<div><small>16–20 OCT</small><h3>Tokyo</h3><p>Neón, parques, cultura y fotografía.</p></div>
+<span class="v4-city-arrow">↗</span>
+</a>
+<a class="v4-city-card osaka" href="#osaka">
+<span class="v4-city-index">02</span>
+<div><small>20–27 OCT</small><h3>Osaka</h3><p>Comida, nightlife, Universal y base final.</p></div>
+<span class="v4-city-arrow">↗</span>
+</a>
+<a class="v4-city-card kyoto" href="#kioto">
+<span class="v4-city-index">03</span>
+<div><small>23–24 OCT</small><h3>Kyoto</h3><p>Templos, torii y fotografía premium.</p></div>
+<span class="v4-city-arrow">↗</span>
+</a>
 </div>
-</article>
-<article class="dashboard-card tip-card">
-<div class="dashboard-kicker">Today's tip</div>
-<div class="tip-icon">💡</div>
-<h3>Tokyo rewards early risers.</h3>
-<p>Lleguen antes de las 8:00 a. m. a Senso-ji para tener mejores fotos y caminar con menos gente.</p>
-</article>
+</section>
+<section class="v4-section v4-tools-section">
+<div class="v4-section-head">
+<div>
+<div class="eyebrow">QUICK ACCESS</div>
+<h3>Herramientas del Crew</h3>
 </div>
-<div class="home-footer-note">JP26 · Built for Justin, Huerta &amp; Aram</div>
+</div>
+<div class="v4-tools-grid">
+<a href="#misiones"><span>🎯</span><b>Actividades</b><small>7 Master Guides</small></a>
+<a href="#survival"><span>🎒</span><b>Survival</b><small>Consejos prácticos</small></a>
+<a href="#survival-frases"><span>🇯🇵</span><b>Japonés</b><small>83 frases</small></a>
+<a href="#apps"><span>📱</span><b>Apps</b><small>Toolkit del viaje</small></a>
+<a href="#crew"><span>👥</span><b>The Crew</b><small>Justin · Huerta · Aram</small></a>
+</div>
+</section>
+<footer class="v4-home-footer">JP26 v4.1 · Japan Adventure OS</footer>
+</div>
 </div>
 </section>
 <section class="wrap app-section" id="misiones">
@@ -4484,4 +4509,4 @@
 </section>
 <footer class="footer">JP26 1.0 · Stable CSS Navigation Build · Justin, Huerta &amp; Aram · October 2026<br/><small>Sin imágenes externas. Las rutas quedan integradas dentro de cada día; los eventos se actualizarán antes del viaje.</small></footer>
 </main>
-<script defer="True" src="js/app.js"></script><script defer="True" src="js/japanese.js"></script><script defer="True" src="js/maps.js"></script></body></html>
+<script defer="True" src="js/app.js"></script><script defer="True" src="js/japanese.js"></script><script defer="True" src="js/maps.js"></script><script defer="True" src="js/dashboard.js"></script></body></html>

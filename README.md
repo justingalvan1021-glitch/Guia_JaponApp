@@ -25,3 +25,12 @@ No elimines `.nojekyll`.
 ## v3.1
 
 Se integraron mapas, imágenes y rutas visuales dentro de las 17 Master Cards de Tokio, Osaka y Kioto.
+
+## v4.1
+
+- Nuevo Home premium.
+- Barra superior con hora de Tokio.
+- Countdown dinámico.
+- Timeline horizontal generado desde `data/itinerary.json`.
+- Tarjetas visuales de Tokio, Osaka y Kioto.
+- Primer paso para separar contenido y presentación.

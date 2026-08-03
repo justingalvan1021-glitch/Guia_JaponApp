@@ -1,0 +1,107 @@
+[
+  {
+    "day": 1,
+    "date": "15 OCT",
+    "city": "Transit",
+    "title": "SLC → Seoul",
+    "icon": "✈️",
+    "href": "#itinerario"
+  },
+  {
+    "day": 2,
+    "date": "16 OCT",
+    "city": "Tokyo",
+    "title": "Arrival + Oshiage",
+    "icon": "🗼",
+    "href": "#itinerario"
+  },
+  {
+    "day": 3,
+    "date": "17 OCT",
+    "city": "Tokyo",
+    "title": "Asakusa + Akihabara",
+    "icon": "🏮",
+    "href": "#asakusa-premium",
+    "active": true
+  },
+  {
+    "day": 4,
+    "date": "18 OCT",
+    "city": "Tokyo",
+    "title": "DisneySea",
+    "icon": "🌊",
+    "href": "#misiones"
+  },
+  {
+    "day": 5,
+    "date": "19 OCT",
+    "city": "Tokyo",
+    "title": "Ghibli + teamLab",
+    "icon": "🌈",
+    "href": "#misiones"
+  },
+  {
+    "day": 6,
+    "date": "20 OCT",
+    "city": "Osaka",
+    "title": "Transfer + Dotonbori",
+    "icon": "🌃",
+    "href": "#namba-premium"
+  },
+  {
+    "day": 7,
+    "date": "21 OCT",
+    "city": "Osaka",
+    "title": "Universal Birthday",
+    "icon": "🎢",
+    "href": "#misiones"
+  },
+  {
+    "day": 8,
+    "date": "22 OCT",
+    "city": "Osaka",
+    "title": "Kaiyukan + Umeda",
+    "icon": "🐠",
+    "href": "#osakabay-premium"
+  },
+  {
+    "day": 9,
+    "date": "23 OCT",
+    "city": "Kyoto",
+    "title": "Higashiyama + Gion",
+    "icon": "🏯",
+    "href": "#higashiyama-premium"
+  },
+  {
+    "day": 10,
+    "date": "24 OCT",
+    "city": "Kyoto",
+    "title": "Arashiyama",
+    "icon": "🎋",
+    "href": "#arashiyama-premium"
+  },
+  {
+    "day": 11,
+    "date": "25 OCT",
+    "city": "Flexible",
+    "title": "Nara / Nintendo",
+    "icon": "🦌",
+    "href": "#itinerario"
+  },
+  {
+    "day": 12,
+    "date": "26 OCT",
+    "city": "Tokyo",
+    "title": "Operation Midnight",
+    "icon": "🚗",
+    "href": "#misiones"
+  },
+  {
+    "day": 13,
+    "date": "27 OCT",
+    "city": "Transit",
+    "title": "Haneda → SLC",
+    "icon": "✈️",
+    "href": "#itinerario"
+  }
+]

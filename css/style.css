@@ -440,6 +440,7 @@ body:has(#survival :target) #inicio{display:none}
 body:has(#survival :target) #survival{display:block}
 #survival .survival-block{display:none;animation:jp26Fade .24s ease}
 #survival .survival-block:target{display:block}
+body:has(#survival-frases :target) #survival-frases{display:block}
 body:has(#survival :target) .nav a[href="#survival"]{
   background:linear-gradient(90deg,rgba(255,59,77,.22),rgba(72,167,255,.10));
   color:#fff;box-shadow:inset 3px 0 0 var(--red)
@@ -544,6 +545,7 @@ body:has(#survival :target) .nav a[href="#survival"]{
 .jp26-map-popup p{margin:0 0 8px;color:#444;font-size:12px}
 .jp26-map-popup a{color:#1666c5;font-weight:800;font-size:12px}
 .leaflet-control-attribution{font-size:10px}
+.jp26-map .leaflet-tile-pane{filter:saturate(.82) contrast(1.04)}.jp26-map .leaflet-control-zoom,.jp26-map .leaflet-control-scale-line{border:0!important;box-shadow:0 8px 24px rgba(0,0,0,.32)}.jp26-map .leaflet-control-zoom a{width:36px;height:36px;line-height:34px;background:rgba(12,16,25,.9);color:#fff;border-color:rgba(255,255,255,.1);backdrop-filter:blur(16px)}.jp26-map .leaflet-control-zoom a:hover{background:#1a2130}.jp26-map .leaflet-control-scale-line{border:1px solid rgba(255,255,255,.28)!important;border-top:0!important;background:rgba(8,11,18,.72);color:#e9edf5;text-shadow:none}.jp26-map-marker-wrap{background:transparent!important;border:0!important}.jp26-map-marker{position:relative;width:44px;height:44px;display:grid;place-items:center;border-radius:15px 15px 15px 4px;transform:rotate(-45deg);background:linear-gradient(145deg,#ff5968,#e9283b);border:2px solid rgba(255,255,255,.9);box-shadow:0 8px 24px rgba(0,0,0,.5),0 0 0 5px rgba(255,59,77,.16)}.jp26-map-marker span{font-size:19px;line-height:1;transform:rotate(45deg)}.jp26-map-marker b{position:absolute;right:-7px;top:-7px;display:grid;place-items:center;width:21px;height:21px;border-radius:50%;background:#fff;color:#111;font:900 10px Inter,sans-serif;transform:rotate(45deg);box-shadow:0 3px 9px rgba(0,0,0,.35)}.leaflet-popup-content-wrapper{border-radius:16px;background:rgba(248,250,253,.98);box-shadow:0 16px 42px rgba(0,0,0,.38)}.leaflet-popup-content{margin:14px 16px}.leaflet-popup-tip{background:#f8fafd}.jp26-map-popup h4{margin:0 0 5px!important;color:#111!important;font-size:14px!important}.jp26-map-popup p{margin:0 0 9px!important;color:#56606e!important}.jp26-map-popup a{display:inline-flex;padding:6px 9px;border-radius:8px;background:#e8f2ff;color:#1267c4!important}.jp26-route-stop{transition:border-color .18s,background .18s,transform .18s}.jp26-route-stop:hover{transform:translateX(3px);border-color:rgba(255,59,77,.38);background:rgba(255,255,255,.065)}
 body:has(#asakusa-route-online:target) #inicio{display:none}
 body:has(#asakusa-route-online:target) #tokio{display:block}
 @media(max-width:950px){

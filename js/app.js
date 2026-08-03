@@ -58,8 +58,9 @@ function initializeBreadcrumbs() {
     const activityId = document.body.dataset.activity;
     const id = activityId ? 'misiones' : (location.hash.slice(1) || 'inicio');
     document.querySelectorAll('.sidebar a[aria-current]').forEach(function (link) { link.removeAttribute('aria-current'); });
+    const navId = id.startsWith('phrase-') ? 'survival-frases' : id;
     const activeLink = Array.from(document.querySelectorAll('.sidebar a[href^="#"]')).find(function (link) {
-      return link.getAttribute('href') === '#' + id;
+      return link.getAttribute('href') === '#' + navId;
     });
     if (activeLink) {
       activeLink.setAttribute('aria-current', 'page');

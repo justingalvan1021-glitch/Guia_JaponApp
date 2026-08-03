@@ -1033,12 +1033,17 @@
 
     const map = L.map(config.elementId, {
       scrollWheelZoom: false,
-      zoomControl: true
+      zoomControl: false,
+      preferCanvas: true
     });
 
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    L.control.zoom({position:'bottomright'}).addTo(map);
+    L.control.scale({position:'bottomleft',imperial:false,maxWidth:110}).addTo(map);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
       maxZoom: 19,
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      subdomains:'abcd',
+      attribution: '&copy; OpenStreetMap &copy; CARTO'
     }).addTo(map);
 
     const coordinates = [];
@@ -1047,7 +1052,15 @@
       coordinates.push(stop.coords);
       const query = encodeURIComponent(stop.name + ' Japan');
 
-      L.marker(stop.coords)
+      const markerIcon = L.divIcon({
+        className:'jp26-map-marker-wrap',
+        html:'<div class="jp26-map-marker"><span>' + stop.icon + '</span><b>' + (index + 1) + '</b></div>',
+        iconSize:[44,50],
+        iconAnchor:[22,48],
+        popupAnchor:[0,-44]
+      });
+
+      L.marker(stop.coords, {icon:markerIcon,keyboard:true,title:stop.name})
         .addTo(map)
         .bindPopup(
           '<div class="jp26-map-popup">' +
@@ -1059,12 +1072,20 @@
         );
     });
 
+    L.polyline(coordinates, {
+      color: '#07090e',
+      weight: 10,
+      opacity: 0.82,
+      lineJoin: 'round',
+      lineCap:'round'
+    }).addTo(map);
+
     const route = L.polyline(coordinates, {
       color: '#ff3b4d',
-      weight: 5,
-      opacity: 0.9,
-      dashArray: '10 8',
-      lineJoin: 'round'
+      weight: 5.5,
+      opacity: 1,
+      lineJoin: 'round',
+      lineCap:'round'
     }).addTo(map);
 
     function fit() {

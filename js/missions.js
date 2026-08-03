@@ -80,14 +80,18 @@ function ensureLeaflet(){
 
 function initializeMap(data){
   ensureLeaflet().then(L=>{
-    const map=L.map('missionMap',{scrollWheelZoom:false});
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
+    const map=L.map('missionMap',{scrollWheelZoom:false,zoomControl:false,preferCanvas:true});
+    L.control.zoom({position:'bottomright'}).addTo(map);
+    L.control.scale({position:'bottomleft',imperial:false,maxWidth:110}).addTo(map);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{maxZoom:19,subdomains:'abcd',attribution:'&copy; OpenStreetMap &copy; CARTO'}).addTo(map);
     const coords=[];
     data.stops.forEach((s,i)=>{
       coords.push([s[1],s[2]]);
-      L.marker([s[1],s[2]]).addTo(map).bindPopup(`<b>${i+1}. ${s[3]} ${escapeHtml(s[0])}</b><br>${escapeHtml(s[4])}`);
+      const markerIcon=L.divIcon({className:'jp26-map-marker-wrap',html:`<div class="jp26-map-marker"><span>${s[3]}</span><b>${i+1}</b></div>`,iconSize:[44,50],iconAnchor:[22,48],popupAnchor:[0,-44]});
+      L.marker([s[1],s[2]],{icon:markerIcon,keyboard:true,title:s[0]}).addTo(map).bindPopup(`<div class="jp26-map-popup"><h4>${i+1}. ${s[3]} ${escapeHtml(s[0])}</h4><p>${escapeHtml(s[4])}</p></div>`);
     });
-    const line=L.polyline(coords,{color:'#ff3b4d',weight:5,opacity:.9,dashArray:'10 8'}).addTo(map);
+    L.polyline(coords,{color:'#07090e',weight:10,opacity:.82,lineJoin:'round',lineCap:'round'}).addTo(map);
+    const line=L.polyline(coords,{color:'#ff3b4d',weight:5.5,opacity:1,lineJoin:'round',lineCap:'round'}).addTo(map);
     map.fitBounds(line.getBounds(),{padding:[35,35]});
     setTimeout(()=>map.invalidateSize(),350);
   }).catch(()=>{qs('missionMap').innerHTML='<div style="display:grid;place-items:center;height:100%;color:#a9b1c3">Mapa no disponible</div>';});

@@ -1,0 +1,150 @@
+{
+  "id": "kaiyukan",
+  "title": "Kaiyukan",
+  "short": "Kaiyukan",
+  "emoji": "🐠",
+  "city": "Osaka Bay",
+  "date": "22 OCT",
+  "duration": "3 horas",
+  "score": "8.7",
+  "budget": "¥5,000–8,000",
+  "reservation": "Recomendada",
+  "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1800&q=88",
+  "objective": "Recorrer el acuario completo alrededor del tanque central, ver el tiburón ballena desde diferentes alturas y cerrar con Tempozan.",
+  "metrics": [
+    [
+      "Duración",
+      "3 h"
+    ],
+    [
+      "Clima",
+      "Ideal lluvia"
+    ],
+    [
+      "Zona",
+      "Osaka Bay"
+    ],
+    [
+      "Después",
+      "Umeda"
+    ]
+  ],
+  "timeline": [
+    [
+      "00:00",
+      "Entrada superior"
+    ],
+    [
+      "00:30",
+      "Bosques y costas"
+    ],
+    [
+      "01:00",
+      "Tanque del Pacífico"
+    ],
+    [
+      "01:50",
+      "Medusas"
+    ],
+    [
+      "02:25",
+      "Exhibiciones finales"
+    ],
+    [
+      "03:00",
+      "Tempozan"
+    ]
+  ],
+  "must": [
+    "Pacific Ocean Tank",
+    "Tiburón ballena",
+    "Medusas"
+  ],
+  "recommended": [
+    "Exhibiciones iniciales",
+    "Tempozan Marketplace"
+  ],
+  "optional": [
+    "Rueda de la fortuna"
+  ],
+  "skip": [
+    "Rueda si el clima está cerrado",
+    "Interrumpir el recorrido a mitad"
+  ],
+  "checklist": [
+    "Boleto",
+    "Cámara",
+    "Chaqueta ligera",
+    "Power bank",
+    "Calzado cómodo",
+    "Plan para Umeda"
+  ],
+  "budgetBreakdown": [
+    [
+      "Entrada",
+      "¥2,700"
+    ],
+    [
+      "Transporte",
+      "¥600"
+    ],
+    [
+      "Comida",
+      "¥2,000"
+    ],
+    [
+      "Souvenir",
+      "¥1,500"
+    ]
+  ],
+  "tips": [
+    "No saltar las primeras salas.",
+    "Seguir el descenso en espiral.",
+    "Dedicar al menos 2.5 horas.",
+    "Funciona perfecto con lluvia."
+  ],
+  "stops": [
+    [
+      "Osakako Station",
+      34.6546,
+      135.4345,
+      "🚆",
+      "Inicio"
+    ],
+    [
+      "Kaiyukan Entrance",
+      34.6545,
+      135.429,
+      "🎟",
+      "Entrada"
+    ],
+    [
+      "Pacific Tank",
+      34.6546,
+      135.4291,
+      "🐋",
+      "Centro"
+    ],
+    [
+      "Jellyfish Area",
+      34.6547,
+      135.4292,
+      "🪼",
+      "Fotografía"
+    ],
+    [
+      "Tempozan Marketplace",
+      34.6552,
+      135.4302,
+      "🍜",
+      "Comida"
+    ],
+    [
+      "Ferris Wheel",
+      34.6563,
+      135.4309,
+      "🎡",
+      "Opcional"
+    ]
+  ]
+}

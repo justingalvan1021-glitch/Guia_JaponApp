@@ -1,0 +1,153 @@
+{
+  "id": "jdm-night",
+  "title": "JDM Night + Daikoku PA",
+  "short": "JDM Night",
+  "emoji": "🚗",
+  "city": "Tokyo / Yokohama",
+  "date": "26 OCT",
+  "duration": "Noche",
+  "score": "9.0",
+  "budget": "¥15,000–25,000",
+  "reservation": "Tour recomendado",
+  "image": "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1800&q=88",
+  "objective": "Vivir una noche de cultura automotriz japonesa con un operador confiable y una ruta flexible.",
+  "metrics": [
+    [
+      "Inicio",
+      "19:00"
+    ],
+    [
+      "Duración",
+      "4–5 h"
+    ],
+    [
+      "Daikoku",
+      "No garantizado"
+    ],
+    [
+      "Regreso",
+      "Medianoche"
+    ]
+  ],
+  "timeline": [
+    [
+      "19:00",
+      "Punto de encuentro"
+    ],
+    [
+      "19:30",
+      "Tokyo Tower"
+    ],
+    [
+      "20:15",
+      "Rainbow Bridge"
+    ],
+    [
+      "21:00",
+      "Daikoku PA"
+    ],
+    [
+      "22:30",
+      "Yokohama"
+    ],
+    [
+      "23:30",
+      "Regreso"
+    ]
+  ],
+  "must": [
+    "Tokyo Tower nocturna",
+    "Rainbow Bridge",
+    "Daikoku PA si está abierto",
+    "Autos JDM"
+  ],
+  "recommended": [
+    "Yokohama skyline",
+    "Fotografía nocturna"
+  ],
+  "optional": [
+    "Paradas extra del operador"
+  ],
+  "skip": [
+    "Intentar llegar en transporte público",
+    "Tours que prometen reunión garantizada"
+  ],
+  "checklist": [
+    "Reserva",
+    "Punto de encuentro",
+    "Identificación",
+    "Chaqueta",
+    "Cámara",
+    "Batería extra",
+    "Cena previa",
+    "Política de cancelación"
+  ],
+  "budgetBreakdown": [
+    [
+      "Tour",
+      "¥15,000"
+    ],
+    [
+      "Transporte",
+      "Incluido"
+    ],
+    [
+      "Comida",
+      "¥2,000"
+    ],
+    [
+      "Souvenir",
+      "¥2,000"
+    ]
+  ],
+  "tips": [
+    "Revisar reseñas del operador.",
+    "Daikoku puede cerrar sin aviso.",
+    "Fotografiar con respeto.",
+    "Cenar antes del tour."
+  ],
+  "stops": [
+    [
+      "Meeting Point Tokyo",
+      35.658,
+      139.7016,
+      "📍",
+      "Inicio"
+    ],
+    [
+      "Tokyo Tower",
+      35.6586,
+      139.7454,
+      "🗼",
+      "Foto"
+    ],
+    [
+      "Rainbow Bridge",
+      35.6367,
+      139.763,
+      "🌉",
+      "Cruce"
+    ],
+    [
+      "Daikoku PA",
+      35.4614,
+      139.6809,
+      "🚗",
+      "Objetivo"
+    ],
+    [
+      "Yokohama Bay",
+      35.455,
+      139.638,
+      "🌃",
+      "Skyline"
+    ],
+    [
+      "Return Tokyo",
+      35.658,
+      139.7016,
+      "🏁",
+      "Final"
+    ]
+  ]
+}

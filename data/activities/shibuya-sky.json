@@ -1,0 +1,159 @@
+{
+  "id": "shibuya-sky",
+  "title": "Shibuya Sky",
+  "short": "Shibuya Sky",
+  "emoji": "🌆",
+  "city": "Tokyo",
+  "date": "17/19 OCT",
+  "duration": "1.5–2 horas",
+  "score": "9.4",
+  "budget": "¥3,000–5,000",
+  "reservation": "Sunset crítica",
+  "image": "https://images.unsplash.com/photo-1549693578-d683be217e58?auto=format&fit=crop&w=1800&q=88",
+  "objective": "Ver Tokio con luz de día, golden hour y noche en una sola visita sin perder la reserva.",
+  "metrics": [
+    [
+      "Llegada",
+      "45 min antes"
+    ],
+    [
+      "Duración",
+      "2 h"
+    ],
+    [
+      "Mejor hora",
+      "Sunset"
+    ],
+    [
+      "Plan B",
+      "Galería interior"
+    ]
+  ],
+  "timeline": [
+    [
+      "-45 min",
+      "Llegar"
+    ],
+    [
+      "-20 min",
+      "Check-in"
+    ],
+    [
+      "00:00",
+      "Subir"
+    ],
+    [
+      "00:15",
+      "Fotos de día"
+    ],
+    [
+      "00:45",
+      "Golden hour"
+    ],
+    [
+      "01:10",
+      "Sunset"
+    ],
+    [
+      "01:35",
+      "Blue hour"
+    ],
+    [
+      "02:00",
+      "Salida"
+    ]
+  ],
+  "must": [
+    "Vista diurna",
+    "Golden hour",
+    "Blue hour",
+    "Ciudad iluminada"
+  ],
+  "recommended": [
+    "Escalator de acceso",
+    "Vista al crossing"
+  ],
+  "optional": [
+    "Galería interior"
+  ],
+  "skip": [
+    "Ir únicamente de día",
+    "Llegar con bolsas grandes"
+  ],
+  "checklist": [
+    "Boleto",
+    "Hora confirmada",
+    "Chaqueta",
+    "Cámara",
+    "Batería extra",
+    "Objetos guardables"
+  ],
+  "budgetBreakdown": [
+    [
+      "Entrada",
+      "¥2,500"
+    ],
+    [
+      "Transporte",
+      "¥500"
+    ],
+    [
+      "Café",
+      "¥800"
+    ],
+    [
+      "Souvenir",
+      "¥1,000"
+    ]
+  ],
+  "tips": [
+    "El viento puede cerrar la azotea.",
+    "Llegar con margen.",
+    "No programar otra reserva muy pegada.",
+    "Guardar objetos sueltos."
+  ],
+  "stops": [
+    [
+      "Shibuya Station",
+      35.658,
+      139.7016,
+      "🚆",
+      "Inicio"
+    ],
+    [
+      "Scramble Square",
+      35.6585,
+      139.7022,
+      "🏙",
+      "Entrada"
+    ],
+    [
+      "Elevators",
+      35.6585,
+      139.7023,
+      "⬆",
+      "Acceso"
+    ],
+    [
+      "Sky Gate",
+      35.6586,
+      139.7024,
+      "🎟",
+      "Check-in"
+    ],
+    [
+      "Rooftop",
+      35.6587,
+      139.7025,
+      "🌇",
+      "Sunset"
+    ],
+    [
+      "Shibuya Crossing",
+      35.6595,
+      139.7005,
+      "📸",
+      "Cierre"
+    ]
+  ]
+}

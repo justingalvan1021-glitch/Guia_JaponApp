@@ -1,0 +1,172 @@
+{
+  "id": "disneysea",
+  "title": "Tokyo DisneySea",
+  "short": "DisneySea",
+  "emoji": "🌊",
+  "city": "Tokyo",
+  "date": "18 OCT",
+  "duration": "Todo el día",
+  "score": "9.9",
+  "budget": "¥18,000–25,000",
+  "reservation": "Crítica",
+  "image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1800&q=88",
+  "objective": "Asegurar Fantasy Springs, completar las atracciones prioritarias y cerrar con el show nocturno sin recorrer el parque de forma innecesaria.",
+  "metrics": [
+    [
+      "Salida",
+      "06:30"
+    ],
+    [
+      "Llegada",
+      "07:30"
+    ],
+    [
+      "Apertura",
+      "09:00"
+    ],
+    [
+      "Cierre",
+      "21:00"
+    ]
+  ],
+  "timeline": [
+    [
+      "06:30",
+      "Salir del hotel"
+    ],
+    [
+      "07:30",
+      "Llegar y formarse"
+    ],
+    [
+      "09:00",
+      "Resolver accesos en la app"
+    ],
+    [
+      "09:15",
+      "Fantasy Springs"
+    ],
+    [
+      "11:30",
+      "Journey to the Center"
+    ],
+    [
+      "13:00",
+      "Comida"
+    ],
+    [
+      "15:00",
+      "Lost River Delta"
+    ],
+    [
+      "18:00",
+      "American Waterfront"
+    ],
+    [
+      "19:30",
+      "Show nocturno"
+    ],
+    [
+      "20:30",
+      "Compras finales"
+    ]
+  ],
+  "must": [
+    "Fantasy Springs",
+    "Journey to the Center of the Earth",
+    "Soaring: Fantastic Flight",
+    "Show nocturno"
+  ],
+  "recommended": [
+    "Indiana Jones Adventure",
+    "Tower of Terror",
+    "20,000 Leagues Under the Sea"
+  ],
+  "optional": [
+    "Gondolas",
+    "Aquatopia",
+    "Atracciones secundarias con poca fila"
+  ],
+  "skip": [
+    "Tiendas repetidas durante la mañana",
+    "Cruzar el parque por una fila ligeramente menor"
+  ],
+  "checklist": [
+    "Boletos",
+    "App de Tokyo Disney Resort",
+    "Power bank",
+    "Impermeable",
+    "Agua",
+    "Desayuno listo",
+    "Método de pago",
+    "Captura de reservaciones"
+  ],
+  "budgetBreakdown": [
+    [
+      "Entrada/Pases",
+      "¥12,000"
+    ],
+    [
+      "Comida",
+      "¥4,000"
+    ],
+    [
+      "Transporte",
+      "¥1,000"
+    ],
+    [
+      "Shopping",
+      "¥8,000"
+    ]
+  ],
+  "tips": [
+    "No detenerse a tomar fotos al entrar.",
+    "Resolver los accesos antes de caminar a otra zona.",
+    "Comer fuera del horario pico.",
+    "Guardar compras grandes para la salida."
+  ],
+  "stops": [
+    [
+      "Entrada DisneySea",
+      35.6267,
+      139.8851,
+      "🎟",
+      "Inicio"
+    ],
+    [
+      "Fantasy Springs",
+      35.6301,
+      139.878,
+      "🏰",
+      "Primera prioridad"
+    ],
+    [
+      "Mysterious Island",
+      35.6264,
+      139.8828,
+      "🌋",
+      "Journey"
+    ],
+    [
+      "Lost River Delta",
+      35.6285,
+      139.8764,
+      "🗿",
+      "Indiana Jones"
+    ],
+    [
+      "American Waterfront",
+      35.627,
+      139.8871,
+      "🚢",
+      "Tower of Terror"
+    ],
+    [
+      "Mediterranean Harbor",
+      35.6269,
+      139.8842,
+      "🌊",
+      "Show nocturno"
+    ]
+  ]
+}

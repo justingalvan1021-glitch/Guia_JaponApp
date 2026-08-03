@@ -34,3 +34,7 @@ Se integraron mapas, imágenes y rutas visuales dentro de las 17 Master Cards de
 - Timeline horizontal generado desde `data/itinerary.json`.
 - Tarjetas visuales de Tokio, Osaka y Kioto.
 - Primer paso para separar contenido y presentación.
+
+## v4.2
+
+Mission Control completo para las siete actividades principales. Consulta `docs/EXPLICACION_PROYECTO.md`.

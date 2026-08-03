@@ -1,0 +1,151 @@
+{
+  "id": "ghibli",
+  "title": "Ghibli Museum",
+  "short": "Ghibli",
+  "emoji": "🎬",
+  "city": "Mitaka",
+  "date": "19 OCT",
+  "duration": "2–3 horas",
+  "score": "9.2",
+  "budget": "¥4,000–7,000",
+  "reservation": "Muy limitada",
+  "image": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=1800&q=88",
+  "objective": "Aprovechar una entrada difícil de conseguir, ver el cortometraje exclusivo y disfrutar el museo sin convertirlo en una carrera.",
+  "metrics": [
+    [
+      "Llegada",
+      "20 min antes"
+    ],
+    [
+      "Duración",
+      "2.5 h"
+    ],
+    [
+      "Fotos",
+      "Solo exterior"
+    ],
+    [
+      "Después",
+      "Kichijoji"
+    ]
+  ],
+  "timeline": [
+    [
+      "00:00",
+      "Entrada"
+    ],
+    [
+      "00:20",
+      "Exhibiciones principales"
+    ],
+    [
+      "01:10",
+      "Cortometraje"
+    ],
+    [
+      "01:45",
+      "Azotea"
+    ],
+    [
+      "02:10",
+      "Tienda"
+    ],
+    [
+      "02:30",
+      "Inokashira Park"
+    ]
+  ],
+  "must": [
+    "Cortometraje exclusivo",
+    "Exhibiciones de animación",
+    "Robot Soldier",
+    "Arquitectura del museo"
+  ],
+  "recommended": [
+    "Mamma Aiuto!",
+    "Inokashira Park"
+  ],
+  "optional": [
+    "Café del museo si la fila es corta"
+  ],
+  "skip": [
+    "Intentar tomar fotos interiores",
+    "Pasar demasiado tiempo en la tienda al inicio"
+  ],
+  "checklist": [
+    "Boleto",
+    "Hora confirmada",
+    "Margen de traslado",
+    "Cámara para exterior",
+    "Efectivo",
+    "Power bank"
+  ],
+  "budgetBreakdown": [
+    [
+      "Entrada",
+      "¥1,000"
+    ],
+    [
+      "Transporte",
+      "¥800"
+    ],
+    [
+      "Comida",
+      "¥2,000"
+    ],
+    [
+      "Souvenir",
+      "¥3,000"
+    ]
+  ],
+  "tips": [
+    "La puntualidad importa.",
+    "No combines el museo con zonas demasiado lejanas.",
+    "Respeta las restricciones de fotografía.",
+    "Protege el horario."
+  ],
+  "stops": [
+    [
+      "Mitaka Station",
+      35.7027,
+      139.5609,
+      "🚆",
+      "Inicio"
+    ],
+    [
+      "Bus Ghibli",
+      35.7023,
+      139.5612,
+      "🚌",
+      "Traslado"
+    ],
+    [
+      "Ghibli Museum",
+      35.6962,
+      139.5704,
+      "🎬",
+      "Actividad"
+    ],
+    [
+      "Robot Soldier",
+      35.6963,
+      139.5705,
+      "🤖",
+      "Azotea"
+    ],
+    [
+      "Inokashira Park",
+      35.7001,
+      139.5742,
+      "🌳",
+      "Paseo"
+    ],
+    [
+      "Kichijoji",
+      35.7032,
+      139.5798,
+      "🍜",
+      "Comida"
+    ]
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "id": "teamlab",
+  "title": "teamLab Planets",
+  "short": "teamLab",
+  "emoji": "🌈",
+  "city": "Tokyo",
+  "date": "19 OCT",
+  "duration": "2–3 horas",
+  "score": "8.8",
+  "budget": "¥5,000–7,000",
+  "reservation": "Con horario",
+  "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1800&q=88",
+  "objective": "Recorrer la experiencia sin prisa, conseguir buenas fotos y salir con margen suficiente para continuar hacia Odaiba.",
+  "metrics": [
+    [
+      "Llegada",
+      "20 min antes"
+    ],
+    [
+      "Duración",
+      "2.5 h"
+    ],
+    [
+      "Zona",
+      "Toyosu"
+    ],
+    [
+      "Calzado",
+      "Fácil de quitar"
+    ]
+  ],
+  "timeline": [
+    [
+      "00:00",
+      "Check-in y lockers"
+    ],
+    [
+      "00:15",
+      "Water Area"
+    ],
+    [
+      "00:50",
+      "Crystal Universe"
+    ],
+    [
+      "01:20",
+      "Garden Area"
+    ],
+    [
+      "01:55",
+      "Fotos finales"
+    ],
+    [
+      "02:20",
+      "Salida a Toyosu"
+    ]
+  ],
+  "must": [
+    "Water Area",
+    "Infinite Crystal Universe",
+    "Floating Flower Garden"
+  ],
+  "recommended": [
+    "Moss Garden",
+    "Salas temporales"
+  ],
+  "optional": [
+    "Repetir una sala si no hay espera"
+  ],
+  "skip": [
+    "Intentar grabar absolutamente todo",
+    "Programar otra reserva demasiado pegada"
+  ],
+  "checklist": [
+    "Boleto",
+    "Hora confirmada",
+    "Ropa práctica",
+    "Calcetines fáciles de quitar",
+    "Power bank",
+    "Locker"
+  ],
+  "budgetBreakdown": [
+    [
+      "Entrada",
+      "¥4,200"
+    ],
+    [
+      "Transporte",
+      "¥600"
+    ],
+    [
+      "Snack",
+      "¥1,000"
+    ],
+    [
+      "Souvenir",
+      "¥1,000"
+    ]
+  ],
+  "tips": [
+    "Llegar 20–30 minutos antes.",
+    "Guardar objetos en locker.",
+    "Respetar reglas de ropa y espejos.",
+    "No correr por las salas."
+  ],
+  "stops": [
+    [
+      "Entrada teamLab",
+      35.6491,
+      139.7898,
+      "🎟",
+      "Check-in"
+    ],
+    [
+      "Lockers",
+      35.649,
+      139.7897,
+      "🔐",
+      "Guardar objetos"
+    ],
+    [
+      "Water Area",
+      35.6492,
+      139.7899,
+      "💧",
+      "Inicio inmersivo"
+    ],
+    [
+      "Crystal Universe",
+      35.6493,
+      139.79,
+      "✨",
+      "Fotografía"
+    ],
+    [
+      "Garden Area",
+      35.6494,
+      139.7901,
+      "🌸",
+      "Flores"
+    ],
+    [
+      "Salida Toyosu",
+      35.649,
+      139.7902,
+      "🚶",
+      "Continuación"
+    ]
+  ]
+}

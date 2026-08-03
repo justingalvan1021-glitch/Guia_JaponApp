@@ -1,0 +1,167 @@
+{
+  "id": "universal",
+  "title": "Universal Studios Japan",
+  "short": "Universal",
+  "emoji": "🎢",
+  "city": "Osaka",
+  "date": "21 OCT",
+  "duration": "Todo el día",
+  "score": "9.8",
+  "budget": "¥20,000–30,000",
+  "reservation": "Crítica",
+  "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1800&q=88",
+  "objective": "Proteger la mañana para Super Nintendo World, completar las atracciones principales y cerrar con una cena de cumpleaños en Namba.",
+  "metrics": [
+    [
+      "Salida",
+      "06:15"
+    ],
+    [
+      "Llegada",
+      "07:00"
+    ],
+    [
+      "Apertura",
+      "Variable"
+    ],
+    [
+      "Cena",
+      "21:30"
+    ]
+  ],
+  "timeline": [
+    [
+      "06:15",
+      "Salir del hotel"
+    ],
+    [
+      "07:00",
+      "Llegar a USJ"
+    ],
+    [
+      "08:00",
+      "Super Nintendo World"
+    ],
+    [
+      "10:30",
+      "Mario Kart / Mine-Cart"
+    ],
+    [
+      "12:00",
+      "Snack temático"
+    ],
+    [
+      "13:30",
+      "Jurassic Park"
+    ],
+    [
+      "16:00",
+      "Harry Potter"
+    ],
+    [
+      "19:00",
+      "Hollywood"
+    ],
+    [
+      "21:30",
+      "Cena de cumpleaños"
+    ]
+  ],
+  "must": [
+    "Super Nintendo World",
+    "Mario Kart: Koopa's Challenge",
+    "Mine-Cart Madness",
+    "Harry Potter and the Forbidden Journey"
+  ],
+  "recommended": [
+    "The Flying Dinosaur",
+    "Hollywood Dream",
+    "Minion Park"
+  ],
+  "optional": [
+    "Shows secundarios",
+    "Atracciones familiares si la fila es corta"
+  ],
+  "skip": [
+    "Tiendas repetidas antes de terminar prioridades",
+    "Filas largas para atracciones no prioritarias"
+  ],
+  "checklist": [
+    "Boletos",
+    "Express Pass",
+    "App USJ",
+    "Timed Entry",
+    "Power bank",
+    "Impermeable",
+    "Agua",
+    "Reserva de cena"
+  ],
+  "budgetBreakdown": [
+    [
+      "Entrada/Pases",
+      "¥16,000"
+    ],
+    [
+      "Comida",
+      "¥4,500"
+    ],
+    [
+      "Transporte",
+      "¥1,000"
+    ],
+    [
+      "Shopping",
+      "¥7,000"
+    ]
+  ],
+  "tips": [
+    "Llegar antes de la apertura publicada.",
+    "Nintendo primero.",
+    "No asumir que Timed Entry está garantizado.",
+    "Dejar energía para la cena."
+  ],
+  "stops": [
+    [
+      "Entrada USJ",
+      34.6654,
+      135.4323,
+      "🎟",
+      "Inicio"
+    ],
+    [
+      "Super Nintendo World",
+      34.6651,
+      135.4287,
+      "🍄",
+      "Prioridad"
+    ],
+    [
+      "Minion Park",
+      34.6668,
+      135.4307,
+      "🟡",
+      "Zona temática"
+    ],
+    [
+      "Jurassic Park",
+      34.6643,
+      135.428,
+      "🦖",
+      "Atracciones intensas"
+    ],
+    [
+      "Wizarding World",
+      34.6663,
+      135.429,
+      "🪄",
+      "Harry Potter"
+    ],
+    [
+      "Hollywood Area",
+      34.6667,
+      135.4322,
+      "🎬",
+      "Cierre"
+    ]
+  ]
+}

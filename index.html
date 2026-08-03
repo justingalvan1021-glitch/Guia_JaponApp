@@ -5,8 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
 <meta content="#080b12" name="theme-color"/>
-<title>JP26 — Japan Adventure</title>
-
+<title>JP26 v3.1 — Integrated City Maps</title>
 <link crossorigin="" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" rel="stylesheet"/><link href="css/style.css" rel="stylesheet"/><script crossorigin="" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><link href="manifest.json" rel="manifest"/><meta content="yes" name="apple-mobile-web-app-capable"/><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/><meta content="JP26" name="apple-mobile-web-app-title"/></head>
 <body>
 <input class="menu-toggle" id="menu" type="checkbox"/>
@@ -981,65 +980,62 @@
 <p><strong>JP26 Approved · ★★★★★</strong><br/><br/>
       Si alguien nos preguntara qué barrio visitar primero en Tokio, seguiríamos recomendando Asakusa. Es una introducción tranquila, fotogénica y muy completa antes de entrar al ritmo más intenso de Shibuya o Akihabara.</p>
 </article>
-</div><section class="asakusa-integrated-route" id="asakusa-route-online"><div class="route-section-label">
-<div class="eyebrow">Mapa y ejecución</div>
-<h4>🗺 Ruta integrada de Asakusa</h4>
-<p>La información, la estrategia y la navegación ahora viven dentro de la misma tarjeta.</p>
-</div>
-<div class="asakusa-route-hero">
+</div><div class="jp26-integrated-map" data-map-slug="asakusa">
+<div class="jp26-route-cover" style="--route-cover:url('https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&amp;fit=crop&amp;w=1800&amp;q=85')">
 <div>
-<span class="tpg-badge">JP26 Route Map</span>
-<h3>Asakusa → Oshiage</h3>
-<p>Del hotel a Kaminarimon, Sensō-ji, Sumida Park y Tokyo Skytree, con las paradas conectadas en el mapa.</p>
+<span class="tpg-badge">JP26 Master Route</span>
+<h3>🏮 Asakusa → Oshiage</h3>
+<p>Templos, snacks tradicionales, río Sumida y Tokyo Skytree desde la base del Crew.</p>
 <div class="crew-pills">
 <span class="pill">🗺 Mapa interactivo</span>
-<span class="pill">🚶 Ruta caminando</span>
+<span class="pill">🚶 Ruta visual</span>
 <span class="pill">📍 6 paradas</span>
-<span class="pill">🌐 Requiere internet</span>
 </div>
 </div>
 </div>
-<div class="asakusa-route-layout">
-<div aria-label="Mapa interactivo de Asakusa y Oshiage" id="jp26-asakusa-map"></div>
-<aside class="asakusa-route-panel">
-<div class="eyebrow">Ruta recomendada</div>
-<h4>Paradas JP26</h4>
-<div class="asakusa-route-legend">
-<span>🏨 Hotel</span><span>🏮 Templo</span>
-<span>📸 Foto</span><span>🛍 Shopping</span>
+<div class="jp26-route-layout">
+<div aria-label="Mapa interactivo de Asakusa → Oshiage" class="jp26-map" id="jp26-map-asakusa"></div>
+<aside class="jp26-route-panel">
+<div class="eyebrow">Mapa y ejecución</div>
+<h4>Ruta recomendada</h4>
+<p class="jp26-route-disclaimer">La línea del mapa es una guía visual. Usa Google Maps para navegación real y transporte actualizado.</p>
+<div class="jp26-route-list">
+<div class="jp26-route-stop">
+<b>1. 🏨 ONE@Tokyo</b>
+<span>Base del Crew</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=ONE%40Tokyo+Japan" rel="noopener" target="_blank">Abrir punto</a>
 </div>
-<div class="asakusa-route-list">
-<div class="asakusa-route-stop">
-<b>1. ONE@Tokyo</b><span>Punto de salida en Oshiage.</span>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=ONE%40Tokyo" rel="noopener" target="_blank">Abrir punto</a>
+<div class="jp26-route-stop">
+<b>2. 🏮 Kaminarimon</b>
+<span>Entrada icónica</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Kaminarimon+Japan" rel="noopener" target="_blank">Abrir punto</a>
 </div>
-<div class="asakusa-route-stop">
-<b>2. Kaminarimon</b><span>Entrada icónica y primera foto.</span>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Kaminarimon+Tokyo" rel="noopener" target="_blank">Abrir punto</a>
+<div class="jp26-route-stop">
+<b>3. 🛍 Nakamise</b>
+<span>Snacks y souvenirs</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Nakamise+Japan" rel="noopener" target="_blank">Abrir punto</a>
 </div>
-<div class="asakusa-route-stop">
-<b>3. Nakamise</b><span>Snacks y souvenirs tradicionales.</span>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Nakamise+Shopping+Street" rel="noopener" target="_blank">Abrir punto</a>
+<div class="jp26-route-stop">
+<b>4. ⛩ Sensō-ji</b>
+<span>Templo principal</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Sens%C5%8D-ji+Japan" rel="noopener" target="_blank">Abrir punto</a>
 </div>
-<div class="asakusa-route-stop">
-<b>4. Sensō-ji</b><span>Templo principal y pagoda.</span>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Sensoji+Temple" rel="noopener" target="_blank">Abrir punto</a>
+<div class="jp26-route-stop">
+<b>5. 📸 Sumida Park</b>
+<span>Vista del río</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Sumida+Park+Japan" rel="noopener" target="_blank">Abrir punto</a>
 </div>
-<div class="asakusa-route-stop">
-<b>5. Sumida Park</b><span>Vista del río y Tokyo Skytree.</span>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Sumida+Park+Tokyo" rel="noopener" target="_blank">Abrir punto</a>
-</div>
-<div class="asakusa-route-stop">
-<b>6. Tokyo Skytree</b><span>Solamachi, shopping y cierre.</span>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Tokyo+Skytree" rel="noopener" target="_blank">Abrir punto</a>
-</div>
-</div>
+<div class="jp26-route-stop">
+<b>6. 🗼 Tokyo Skytree</b>
+<span>Solamachi y cierre</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Tokyo+Skytree+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div></div>
 <div class="btn-row">
-<a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=ONE%40Tokyo&amp;destination=Tokyo+Skytree&amp;waypoints=Kaminarimon%7CNakamise+Shopping+Street%7CSensoji+Temple%7CSumida+Park+Tokyo&amp;travelmode=walking" rel="noopener" target="_blank">Abrir ruta completa</a>
+<a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=ONE%40Tokyo&amp;destination=Tokyo+Skytree&amp;waypoints=Kaminarimon%7CNakamise%7CSens%C5%8D-ji%7CSumida+Park&amp;travelmode=walking" rel="noopener" target="_blank">Abrir ruta completa</a>
 </div>
 </aside>
 </div>
-</section>
+</div>
 </section>
 <section class="akiba-guide" id="akihabara-premium">
 <div class="akiba-top">
@@ -1134,6 +1130,61 @@
 <p><strong>JP26 Approved · ★★★★★</strong><br/><br/>
       Akihabara es perfecta para ustedes porque combina gaming, Pokémon, fotografía nocturna, compras y una energía que no se repite en otra parte del viaje. Incluso quien no sea fan del anime encontrará algo interesante.</p>
 </article>
+</div><div class="jp26-integrated-map" data-map-slug="akihabara">
+<div class="jp26-route-cover" style="--route-cover:url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&amp;fit=crop&amp;w=1800&amp;q=85')">
+<div>
+<span class="tpg-badge">JP26 Master Route</span>
+<h3>🎮 Akihabara</h3>
+<p>Gaming, anime, figuras, arcades y fotografía de neón en una ruta compacta.</p>
+<div class="crew-pills">
+<span class="pill">🗺 Mapa interactivo</span>
+<span class="pill">🚶 Ruta visual</span>
+<span class="pill">📍 6 paradas</span>
+</div>
+</div>
+</div>
+<div class="jp26-route-layout">
+<div aria-label="Mapa interactivo de Akihabara" class="jp26-map" id="jp26-map-akihabara"></div>
+<aside class="jp26-route-panel">
+<div class="eyebrow">Mapa y ejecución</div>
+<h4>Ruta recomendada</h4>
+<p class="jp26-route-disclaimer">La línea del mapa es una guía visual. Usa Google Maps para navegación real y transporte actualizado.</p>
+<div class="jp26-route-list">
+<div class="jp26-route-stop">
+<b>1. 🚆 Akihabara Station</b>
+<span>Inicio</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Akihabara+Station+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>2. 🛍 Yodobashi Akiba</b>
+<span>Electrónica</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Yodobashi+Akiba+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>3. 🎮 Radio Kaikan</b>
+<span>Figuras y coleccionables</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Radio+Kaikan+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>4. 🕹 GiGO Akihabara</b>
+<span>Arcade</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=GiGO+Akihabara+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>5. 📦 Mandarake Complex</b>
+<span>Segunda mano</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Mandarake+Complex+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>6. ⛩ Kanda Myojin</b>
+<span>Cierre tranquilo</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Kanda+Myojin+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div></div>
+<div class="btn-row">
+<a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Akihabara+Station&amp;destination=Kanda+Myojin&amp;waypoints=Yodobashi+Akiba%7CRadio+Kaikan%7CGiGO+Akihabara%7CMandarake+Complex&amp;travelmode=walking" rel="noopener" target="_blank">Abrir ruta completa</a>
+</div>
+</aside>
+</div>
 </div>
 </section><section class="tokyo-premium-guide" id="shibuya-premium">
 <div class="tpg-top">
@@ -1152,6 +1203,61 @@
 <article class="tpg-card pack"><h4>🎒 Antes de salir</h4><ul><li>Batería extra para cámara</li><li>Power bank</li><li>Espacio para compras</li><li>Reserva de Shibuya Sky</li><li>Chaqueta ligera para la azotea</li></ul></article>
 <article class="tpg-card"><h4>💡 JP26 Tips</h4><ul><li>Reserva Shibuya Sky cerca del atardecer.</li><li>Haz Nintendo y Pokémon juntos: están en el mismo edificio.</li><li>No cargues compras grandes antes del mirador.</li><li>Después pueden cenar, ir a karaoke o continuar con nightlife.</li></ul></article>
 <article class="tpg-card verdict"><h4>🧠 Veredicto JP26</h4><p><strong>JP26 Approved · ★★★★★</strong><br/><br/>Es uno de los barrios más completos del viaje y probablemente una de las zonas donde más tiempo querrán quedarse.</p></article>
+</div><div class="jp26-integrated-map" data-map-slug="shibuya">
+<div class="jp26-route-cover" style="--route-cover:url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&amp;fit=crop&amp;w=1800&amp;q=85')">
+<div>
+<span class="tpg-badge">JP26 Master Route</span>
+<h3>🌆 Shibuya</h3>
+<p>Crossing, skyline, Nintendo, Pokémon, Center-gai y noche en el Tokio moderno.</p>
+<div class="crew-pills">
+<span class="pill">🗺 Mapa interactivo</span>
+<span class="pill">🚶 Ruta visual</span>
+<span class="pill">📍 6 paradas</span>
+</div>
+</div>
+</div>
+<div class="jp26-route-layout">
+<div aria-label="Mapa interactivo de Shibuya" class="jp26-map" id="jp26-map-shibuya"></div>
+<aside class="jp26-route-panel">
+<div class="eyebrow">Mapa y ejecución</div>
+<h4>Ruta recomendada</h4>
+<p class="jp26-route-disclaimer">La línea del mapa es una guía visual. Usa Google Maps para navegación real y transporte actualizado.</p>
+<div class="jp26-route-list">
+<div class="jp26-route-stop">
+<b>1. 🚆 Shibuya Station</b>
+<span>Inicio</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Shibuya+Station+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>2. 🐕 Hachikō</b>
+<span>Punto de encuentro</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Hachik%C5%8D+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>3. 📸 Shibuya Crossing</b>
+<span>Foto icónica</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Shibuya+Crossing+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>4. 🎮 Shibuya PARCO</b>
+<span>Nintendo y Pokémon</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Shibuya+PARCO+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>5. 🌃 Center-gai</b>
+<span>Comida y ambiente</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Center-gai+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>6. 🌇 Shibuya Sky</b>
+<span>Atardecer</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Shibuya+Sky+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div></div>
+<div class="btn-row">
+<a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Shibuya+Station&amp;destination=Shibuya+Sky&amp;waypoints=Hachik%C5%8D%7CShibuya+Crossing%7CShibuya+PARCO%7CCenter-gai&amp;travelmode=walking" rel="noopener" target="_blank">Abrir ruta completa</a>
+</div>
+</aside>
+</div>
 </div></section><section class="tokyo-premium-guide" id="harajuku-premium">
 <div class="tpg-top">
 <div class="tpg-summary"><span class="tpg-badge">JP26 Premium Guide</span><h3>🎨 Harajuku + Omotesando</h3><p>Templo, moda, cafés y arquitectura. Tranquilidad en Meiji Jingu y energía en Takeshita, Cat Street y Omotesando.</p>
@@ -1169,6 +1275,61 @@
 <article class="tpg-card pack"><h4>🎒 Antes de salir</h4><ul><li>Zapatos cómodos</li><li>Mochila ligera</li><li>Cámara</li><li>Presupuesto para streetwear</li><li>Power bank</li></ul></article>
 <article class="tpg-card"><h4>💡 JP26 Tips</h4><ul><li>Meiji Jingu primero.</li><li>Cat Street encaja mejor con ustedes que Takeshita.</li><li>Elijan solo las flagship prioritarias.</li><li>Omotesando es excelente para arquitectura.</li></ul></article>
 <article class="tpg-card verdict"><h4>🧠 Veredicto JP26</h4><p><strong>JP26 Approved · ★★★★☆</strong><br/><br/>Vale mucho la pena si combinan naturaleza, arquitectura y shopping. No necesita un día completo.</p></article>
+</div><div class="jp26-integrated-map" data-map-slug="harajuku">
+<div class="jp26-route-cover" style="--route-cover:url('https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&amp;fit=crop&amp;w=1800&amp;q=85')">
+<div>
+<span class="tpg-badge">JP26 Master Route</span>
+<h3>👟 Harajuku + Omotesando</h3>
+<p>Streetwear, sneakers, Takeshita, santuarios y arquitectura de Omotesando.</p>
+<div class="crew-pills">
+<span class="pill">🗺 Mapa interactivo</span>
+<span class="pill">🚶 Ruta visual</span>
+<span class="pill">📍 6 paradas</span>
+</div>
+</div>
+</div>
+<div class="jp26-route-layout">
+<div aria-label="Mapa interactivo de Harajuku + Omotesando" class="jp26-map" id="jp26-map-harajuku"></div>
+<aside class="jp26-route-panel">
+<div class="eyebrow">Mapa y ejecución</div>
+<h4>Ruta recomendada</h4>
+<p class="jp26-route-disclaimer">La línea del mapa es una guía visual. Usa Google Maps para navegación real y transporte actualizado.</p>
+<div class="jp26-route-list">
+<div class="jp26-route-stop">
+<b>1. 🚆 Harajuku Station</b>
+<span>Inicio</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Harajuku+Station+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>2. ⛩ Meiji Jingu</b>
+<span>Santuario</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Meiji+Jingu+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>3. 🍭 Takeshita Street</b>
+<span>Moda y snacks</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Takeshita+Street+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>4. 👟 Cat Street</b>
+<span>Streetwear</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Cat+Street+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>5. 🏙 Omotesando</b>
+<span>Arquitectura</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Omotesando+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>6. 📸 Tokyu Plaza Omotesando</b>
+<span>Foto final</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Tokyu+Plaza+Omotesando+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div></div>
+<div class="btn-row">
+<a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Harajuku+Station&amp;destination=Tokyu+Plaza+Omotesando&amp;waypoints=Meiji+Jingu%7CTakeshita+Street%7CCat+Street%7COmotesando&amp;travelmode=walking" rel="noopener" target="_blank">Abrir ruta completa</a>
+</div>
+</aside>
+</div>
 </div></section><section class="tokyo-premium-guide" id="odaiba-premium">
 <div class="tpg-top">
 <div class="tpg-summary"><span class="tpg-badge">JP26 Premium Guide</span><h3>🌈 Toyosu + Odaiba</h3><p>Arte inmersivo, bahía, Gundam y centros comerciales. La mejor zona para lluvia, arquitectura moderna y un ritmo más relajado.</p>
@@ -1186,6 +1347,61 @@
 <article class="tpg-card pack"><h4>🎒 Antes de salir</h4><ul><li>Ropa práctica para teamLab</li><li>Calcetines fáciles de quitar</li><li>Power bank</li><li>Gran angular</li><li>Chaqueta para la bahía</li></ul></article>
 <article class="tpg-card"><h4>💡 JP26 Tips</h4><ul><li>Confirma la hora de teamLab.</li><li>Ve al Gundam con buena luz.</li><li>La bahía puede sentirse fría.</li><li>No llenes el día con malls.</li></ul></article>
 <article class="tpg-card verdict"><h4>🧠 Veredicto JP26</h4><p><strong>JP26 Approved · ★★★★☆</strong><br/><br/>Combinada con teamLab, la zona crea un día distinto y muy completo.</p></article>
+</div><div class="jp26-integrated-map" data-map-slug="odaiba">
+<div class="jp26-route-cover" style="--route-cover:url('https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&amp;fit=crop&amp;w=1800&amp;q=85')">
+<div>
+<span class="tpg-badge">JP26 Master Route</span>
+<h3>🤖 Odaiba + Toyosu</h3>
+<p>teamLab, bahía de Tokio, Gundam, shopping y vistas nocturnas.</p>
+<div class="crew-pills">
+<span class="pill">🗺 Mapa interactivo</span>
+<span class="pill">🚶 Ruta visual</span>
+<span class="pill">📍 6 paradas</span>
+</div>
+</div>
+</div>
+<div class="jp26-route-layout">
+<div aria-label="Mapa interactivo de Odaiba + Toyosu" class="jp26-map" id="jp26-map-odaiba"></div>
+<aside class="jp26-route-panel">
+<div class="eyebrow">Mapa y ejecución</div>
+<h4>Ruta recomendada</h4>
+<p class="jp26-route-disclaimer">La línea del mapa es una guía visual. Usa Google Maps para navegación real y transporte actualizado.</p>
+<div class="jp26-route-list">
+<div class="jp26-route-stop">
+<b>1. 🌈 teamLab Planets</b>
+<span>Experiencia inmersiva</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=teamLab+Planets+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>2. 🍣 Toyosu Market</b>
+<span>Mercado</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Toyosu+Market+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>3. 📸 Odaiba Seaside Park</b>
+<span>Bahía</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Odaiba+Seaside+Park+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>4. 🛍 DiverCity Tokyo Plaza</b>
+<span>Shopping</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=DiverCity+Tokyo+Plaza+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>5. 🤖 Unicorn Gundam</b>
+<span>Foto</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Unicorn+Gundam+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>6. 🌉 Rainbow Bridge View</b>
+<span>Noche</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Rainbow+Bridge+View+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div></div>
+<div class="btn-row">
+<a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=teamLab+Planets&amp;destination=Rainbow+Bridge+View&amp;waypoints=Toyosu+Market%7COdaiba+Seaside+Park%7CDiverCity+Tokyo+Plaza%7CUnicorn+Gundam&amp;travelmode=walking" rel="noopener" target="_blank">Abrir ruta completa</a>
+</div>
+</aside>
+</div>
 </div></section><section class="tokyo-premium-guide" id="ginza-premium">
 <div class="tpg-top">
 <div class="tpg-summary"><span class="tpg-badge">JP26 Premium Guide</span><h3>💎 Ginza + Tokyo Station</h3><p>Lujo, relojes, arquitectura, grandes almacenes y una de las zonas más elegantes para caminar de noche.</p>
@@ -1203,6 +1419,61 @@
 <article class="tpg-card pack"><h4>🎒 Antes de salir</h4><ul><li>Presupuesto definido</li><li>Cámara</li><li>Zapatos cómodos</li><li>Lista de tiendas</li><li>Espacio para compras</li></ul></article>
 <article class="tpg-card"><h4>💡 JP26 Tips</h4><ul><li>Ve con objetivos claros.</li><li>Combina Ginza con Tokyo Station.</li><li>Los food halls sirven para regalos.</li><li>La zona mejora al caer la noche.</li></ul></article>
 <article class="tpg-card verdict"><h4>🧠 Veredicto JP26</h4><p><strong>JP26 Approved · ★★★★☆</strong><br/><br/>No es imprescindible para todos, pero puede ser excelente para compras específicas y fotografía arquitectónica.</p></article>
+</div><div class="jp26-integrated-map" data-map-slug="ginza">
+<div class="jp26-route-cover" style="--route-cover:url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&amp;fit=crop&amp;w=1800&amp;q=85')">
+<div>
+<span class="tpg-badge">JP26 Master Route</span>
+<h3>⌚ Ginza + Marunouchi</h3>
+<p>Relojes, arquitectura, tiendas insignia y una caminata elegante hacia Tokyo Station.</p>
+<div class="crew-pills">
+<span class="pill">🗺 Mapa interactivo</span>
+<span class="pill">🚶 Ruta visual</span>
+<span class="pill">📍 6 paradas</span>
+</div>
+</div>
+</div>
+<div class="jp26-route-layout">
+<div aria-label="Mapa interactivo de Ginza + Marunouchi" class="jp26-map" id="jp26-map-ginza"></div>
+<aside class="jp26-route-panel">
+<div class="eyebrow">Mapa y ejecución</div>
+<h4>Ruta recomendada</h4>
+<p class="jp26-route-disclaimer">La línea del mapa es una guía visual. Usa Google Maps para navegación real y transporte actualizado.</p>
+<div class="jp26-route-list">
+<div class="jp26-route-stop">
+<b>1. 🚆 Ginza Station</b>
+<span>Inicio</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Ginza+Station+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>2. 🛍 Ginza Six</b>
+<span>Flagships</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Ginza+Six+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>3. ⌚ Seiko House Ginza</b>
+<span>Relojes</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Seiko+House+Ginza+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>4. 🧺 MUJI Ginza</b>
+<span>Diseño japonés</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=MUJI+Ginza+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>5. 📸 Tokyo International Forum</b>
+<span>Arquitectura</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Tokyo+International+Forum+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>6. 🚉 Tokyo Station</b>
+<span>Cierre</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Tokyo+Station+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div></div>
+<div class="btn-row">
+<a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Ginza+Station&amp;destination=Tokyo+Station&amp;waypoints=Ginza+Six%7CSeiko+House+Ginza%7CMUJI+Ginza%7CTokyo+International+Forum&amp;travelmode=walking" rel="noopener" target="_blank">Abrir ruta completa</a>
+</div>
+</aside>
+</div>
 </div></section><section class="tokyo-premium-guide" id="mitaka-premium">
 <div class="tpg-top">
 <div class="tpg-summary"><span class="tpg-badge">JP26 Premium Guide</span><h3>🎬 Mitaka + Kichijoji</h3><p>Ghibli Museum, parques y un Tokio más tranquilo. La visita depende del boleto, pero ofrece un descanso del ritmo del centro.</p>
@@ -1220,6 +1491,61 @@
 <article class="tpg-card pack"><h4>🎒 Antes de salir</h4><ul><li>Boleto confirmado</li><li>Cámara para exteriores</li><li>Power bank</li><li>Zapatos cómodos</li><li>Margen para traslado</li></ul></article>
 <article class="tpg-card"><h4>💡 JP26 Tips</h4><ul><li>Llega con margen.</li><li>Respeta restricciones de fotografía.</li><li>Combina museo y parque.</li><li>No agregues demasiadas actividades lejanas.</li></ul></article>
 <article class="tpg-card verdict"><h4>🧠 Veredicto JP26</h4><p><strong>JP26 Approved · ★★★★★ con boleto</strong><br/><br/>Con entrada, puede ser una de las experiencias más memorables del viaje.</p></article>
+</div><div class="jp26-integrated-map" data-map-slug="mitaka">
+<div class="jp26-route-cover" style="--route-cover:url('https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&amp;fit=crop&amp;w=1800&amp;q=85')">
+<div>
+<span class="tpg-badge">JP26 Master Route</span>
+<h3>🎬 Mitaka + Kichijoji</h3>
+<p>Ghibli Museum, parque Inokashira y una tarde relajada en Kichijoji.</p>
+<div class="crew-pills">
+<span class="pill">🗺 Mapa interactivo</span>
+<span class="pill">🚶 Ruta visual</span>
+<span class="pill">📍 6 paradas</span>
+</div>
+</div>
+</div>
+<div class="jp26-route-layout">
+<div aria-label="Mapa interactivo de Mitaka + Kichijoji" class="jp26-map" id="jp26-map-mitaka"></div>
+<aside class="jp26-route-panel">
+<div class="eyebrow">Mapa y ejecución</div>
+<h4>Ruta recomendada</h4>
+<p class="jp26-route-disclaimer">La línea del mapa es una guía visual. Usa Google Maps para navegación real y transporte actualizado.</p>
+<div class="jp26-route-list">
+<div class="jp26-route-stop">
+<b>1. 🚆 Mitaka Station</b>
+<span>Inicio</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Mitaka+Station+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>2. 🎬 Ghibli Museum</b>
+<span>Reserva principal</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Ghibli+Museum+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>3. 🌳 Inokashira Park</b>
+<span>Paseo</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Inokashira+Park+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>4. ⛩ Inokashira Benzaiten</b>
+<span>Templo</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Inokashira+Benzaiten+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>5. 🛍 Kichijoji Sunroad</b>
+<span>Shopping</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Kichijoji+Sunroad+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>6. 🚆 Kichijoji Station</b>
+<span>Final</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Kichijoji+Station+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div></div>
+<div class="btn-row">
+<a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Mitaka+Station&amp;destination=Kichijoji+Station&amp;waypoints=Ghibli+Museum%7CInokashira+Park%7CInokashira+Benzaiten%7CKichijoji+Sunroad&amp;travelmode=walking" rel="noopener" target="_blank">Abrir ruta completa</a>
+</div>
+</aside>
+</div>
 </div></section>
 </div>
 <div class="guide-block" id="tokio-food"><div class="guide-block-head"><span>🍜</span><div><h3>Restaurantes</h3><p>Solo recomendaciones de TOKIO.</p></div></div><div class="grid g3">
@@ -1552,6 +1878,61 @@
 <h4>🧠 Veredicto JP26</h4>
 <p><strong>JP26 Approved · ★★★★★</strong><br/><br/>Es el corazón práctico del viaje en Osaka y la zona que mejor combina los gustos de los tres.</p>
 </article>
+</div><div class="jp26-integrated-map" data-map-slug="namba">
+<div class="jp26-route-cover" style="--route-cover:url('https://images.unsplash.com/photo-1590559899731-a382839e5549?auto=format&amp;fit=crop&amp;w=1800&amp;q=85')">
+<div>
+<span class="tpg-badge">JP26 Master Route</span>
+<h3>🌃 Namba + Dotonbori</h3>
+<p>Comida, neones, shopping y nightlife caminando desde el hotel.</p>
+<div class="crew-pills">
+<span class="pill">🗺 Mapa interactivo</span>
+<span class="pill">🚶 Ruta visual</span>
+<span class="pill">📍 6 paradas</span>
+</div>
+</div>
+</div>
+<div class="jp26-route-layout">
+<div aria-label="Mapa interactivo de Namba + Dotonbori" class="jp26-map" id="jp26-map-namba"></div>
+<aside class="jp26-route-panel">
+<div class="eyebrow">Mapa y ejecución</div>
+<h4>Ruta recomendada</h4>
+<p class="jp26-route-disclaimer">La línea del mapa es una guía visual. Usa Google Maps para navegación real y transporte actualizado.</p>
+<div class="jp26-route-list">
+<div class="jp26-route-stop">
+<b>1. 🏨 APA Hotel Osaka Namba</b>
+<span>Base</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=APA+Hotel+Osaka+Namba+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>2. ⛩ Namba Yasaka Shrine</b>
+<span>Cabeza de león</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Namba+Yasaka+Shrine+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>3. 🍣 Kuromon Market</b>
+<span>Comida</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Kuromon+Market+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>4. 📸 Dotonbori Glico Sign</b>
+<span>Foto obligatoria</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Dotonbori+Glico+Sign+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>5. 🏮 Hozenji Yokocho</b>
+<span>Callejón</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Hozenji+Yokocho+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>6. 🛍 Shinsaibashi</b>
+<span>Shopping</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Shinsaibashi+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div></div>
+<div class="btn-row">
+<a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=APA+Hotel+Osaka+Namba&amp;destination=Shinsaibashi&amp;waypoints=Namba+Yasaka+Shrine%7CKuromon+Market%7CDotonbori+Glico+Sign%7CHozenji+Yokocho&amp;travelmode=walking" rel="noopener" target="_blank">Abrir ruta completa</a>
+</div>
+</aside>
+</div>
 </div>
 </section><section class="tokyo-premium-guide" id="umeda-premium">
 <div class="tpg-top">
@@ -1620,6 +2001,61 @@
 <h4>🧠 Veredicto JP26</h4>
 <p><strong>JP26 Approved · ★★★★☆</strong><br/><br/>Es la mejor zona de Osaka para combinar compras de cultura pop con un skyline fuerte.</p>
 </article>
+</div><div class="jp26-integrated-map" data-map-slug="umeda">
+<div class="jp26-route-cover" style="--route-cover:url('https://images.unsplash.com/photo-1590559899731-a382839e5549?auto=format&amp;fit=crop&amp;w=1800&amp;q=85')">
+<div>
+<span class="tpg-badge">JP26 Master Route</span>
+<h3>🏙 Umeda</h3>
+<p>Osaka Station City, Nintendo, Pokémon, electrónica y skyline.</p>
+<div class="crew-pills">
+<span class="pill">🗺 Mapa interactivo</span>
+<span class="pill">🚶 Ruta visual</span>
+<span class="pill">📍 6 paradas</span>
+</div>
+</div>
+</div>
+<div class="jp26-route-layout">
+<div aria-label="Mapa interactivo de Umeda" class="jp26-map" id="jp26-map-umeda"></div>
+<aside class="jp26-route-panel">
+<div class="eyebrow">Mapa y ejecución</div>
+<h4>Ruta recomendada</h4>
+<p class="jp26-route-disclaimer">La línea del mapa es una guía visual. Usa Google Maps para navegación real y transporte actualizado.</p>
+<div class="jp26-route-list">
+<div class="jp26-route-stop">
+<b>1. 🚆 Osaka Station</b>
+<span>Inicio</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Osaka+Station+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>2. 🎮 Nintendo OSAKA</b>
+<span>Prioridad</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Nintendo+OSAKA+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>3. ⚡ Pokémon Center Osaka</b>
+<span>Shopping</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Pok%C3%A9mon+Center+Osaka+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>4. 📱 Yodobashi Umeda</b>
+<span>Electrónica</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Yodobashi+Umeda+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>5. 🛍 Grand Front Osaka</b>
+<span>Centro comercial</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Grand+Front+Osaka+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>6. 🌇 Umeda Sky Building</b>
+<span>Atardecer</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Umeda+Sky+Building+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div></div>
+<div class="btn-row">
+<a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Osaka+Station&amp;destination=Umeda+Sky+Building&amp;waypoints=Nintendo+OSAKA%7CPok%C3%A9mon+Center+Osaka%7CYodobashi+Umeda%7CGrand+Front+Osaka&amp;travelmode=walking" rel="noopener" target="_blank">Abrir ruta completa</a>
+</div>
+</aside>
+</div>
 </div>
 </section><section class="tokyo-premium-guide" id="osakabay-premium">
 <div class="tpg-top">
@@ -1688,6 +2124,61 @@
 <h4>🧠 Veredicto JP26</h4>
 <p><strong>JP26 Approved · ★★★★☆</strong><br/><br/>Kaiyukan sí merece un bloque propio del viaje y funciona especialmente bien como día indoor.</p>
 </article>
+</div><div class="jp26-integrated-map" data-map-slug="osaka-bay">
+<div class="jp26-route-cover" style="--route-cover:url('https://images.unsplash.com/photo-1590559899731-a382839e5549?auto=format&amp;fit=crop&amp;w=1800&amp;q=85')">
+<div>
+<span class="tpg-badge">JP26 Master Route</span>
+<h3>🐠 Osaka Bay + Tempozan</h3>
+<p>Kaiyukan, puerto, Tempozan y una tarde perfecta para clima lluvioso.</p>
+<div class="crew-pills">
+<span class="pill">🗺 Mapa interactivo</span>
+<span class="pill">🚶 Ruta visual</span>
+<span class="pill">📍 6 paradas</span>
+</div>
+</div>
+</div>
+<div class="jp26-route-layout">
+<div aria-label="Mapa interactivo de Osaka Bay + Tempozan" class="jp26-map" id="jp26-map-osaka-bay"></div>
+<aside class="jp26-route-panel">
+<div class="eyebrow">Mapa y ejecución</div>
+<h4>Ruta recomendada</h4>
+<p class="jp26-route-disclaimer">La línea del mapa es una guía visual. Usa Google Maps para navegación real y transporte actualizado.</p>
+<div class="jp26-route-list">
+<div class="jp26-route-stop">
+<b>1. 🚆 Osakako Station</b>
+<span>Inicio</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Osakako+Station+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>2. 🐠 Kaiyukan</b>
+<span>Acuario</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Kaiyukan+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>3. 🍜 Tempozan Marketplace</b>
+<span>Comida</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Tempozan+Marketplace+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>4. 🎡 Tempozan Ferris Wheel</b>
+<span>Vista</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Tempozan+Ferris+Wheel+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>5. 🌳 Tempozan Park</b>
+<span>Paseo</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Tempozan+Park+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>6. 📸 Osaka Bay View</b>
+<span>Cierre</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Osaka+Bay+View+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div></div>
+<div class="btn-row">
+<a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Osakako+Station&amp;destination=Osaka+Bay+View&amp;waypoints=Kaiyukan%7CTempozan+Marketplace%7CTempozan+Ferris+Wheel%7CTempozan+Park&amp;travelmode=walking" rel="noopener" target="_blank">Abrir ruta completa</a>
+</div>
+</aside>
+</div>
 </div>
 </section><section class="tokyo-premium-guide" id="shinsekai-premium">
 <div class="tpg-top">
@@ -1756,6 +2247,61 @@
 <h4>🧠 Veredicto JP26</h4>
 <p><strong>JP26 Approved · ★★★☆☆</strong><br/><br/>Muy divertida y fotogénica, pero secundaria frente a Namba, Universal, Kaiyukan y Umeda.</p>
 </article>
+</div><div class="jp26-integrated-map" data-map-slug="shinsekai">
+<div class="jp26-route-cover" style="--route-cover:url('https://images.unsplash.com/photo-1590559899731-a382839e5549?auto=format&amp;fit=crop&amp;w=1800&amp;q=85')">
+<div>
+<span class="tpg-badge">JP26 Master Route</span>
+<h3>🗼 Shinsekai + Tennoji</h3>
+<p>Tsutenkaku, kushikatsu, calles retro y miradores de Tennoji.</p>
+<div class="crew-pills">
+<span class="pill">🗺 Mapa interactivo</span>
+<span class="pill">🚶 Ruta visual</span>
+<span class="pill">📍 6 paradas</span>
+</div>
+</div>
+</div>
+<div class="jp26-route-layout">
+<div aria-label="Mapa interactivo de Shinsekai + Tennoji" class="jp26-map" id="jp26-map-shinsekai"></div>
+<aside class="jp26-route-panel">
+<div class="eyebrow">Mapa y ejecución</div>
+<h4>Ruta recomendada</h4>
+<p class="jp26-route-disclaimer">La línea del mapa es una guía visual. Usa Google Maps para navegación real y transporte actualizado.</p>
+<div class="jp26-route-list">
+<div class="jp26-route-stop">
+<b>1. 🚆 Dobutsuen-mae Station</b>
+<span>Inicio</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Dobutsuen-mae+Station+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>2. 🍢 Jan-Jan Yokocho</b>
+<span>Comida</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Jan-Jan+Yokocho+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>3. 🗼 Tsutenkaku</b>
+<span>Icono</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Tsutenkaku+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>4. 📸 Shinsekai Market</b>
+<span>Calles retro</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Shinsekai+Market+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>5. 🌳 Tennoji Park</b>
+<span>Pausa</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Tennoji+Park+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>6. 🌇 Abeno Harukas</b>
+<span>Mirador</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Abeno+Harukas+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div></div>
+<div class="btn-row">
+<a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Dobutsuen-mae+Station&amp;destination=Abeno+Harukas&amp;waypoints=Jan-Jan+Yokocho%7CTsutenkaku%7CShinsekai+Market%7CTennoji+Park&amp;travelmode=walking" rel="noopener" target="_blank">Abrir ruta completa</a>
+</div>
+</aside>
+</div>
 </div>
 </section><section class="tokyo-premium-guide" id="osakacastle-premium">
 <div class="tpg-top">
@@ -1824,6 +2370,61 @@
 <h4>🧠 Veredicto JP26</h4>
 <p><strong>JP26 Approved · ★★★☆☆</strong><br/><br/>Es una visita clásica y fotogénica, pero no una prioridad absoluta para este itinerario.</p>
 </article>
+</div><div class="jp26-integrated-map" data-map-slug="osaka-castle">
+<div class="jp26-route-cover" style="--route-cover:url('https://images.unsplash.com/photo-1590559899731-a382839e5549?auto=format&amp;fit=crop&amp;w=1800&amp;q=85')">
+<div>
+<span class="tpg-badge">JP26 Master Route</span>
+<h3>🏯 Castillo de Osaka</h3>
+<p>Historia, jardines, murallas y fotografía alrededor del castillo.</p>
+<div class="crew-pills">
+<span class="pill">🗺 Mapa interactivo</span>
+<span class="pill">🚶 Ruta visual</span>
+<span class="pill">📍 6 paradas</span>
+</div>
+</div>
+</div>
+<div class="jp26-route-layout">
+<div aria-label="Mapa interactivo de Castillo de Osaka" class="jp26-map" id="jp26-map-osaka-castle"></div>
+<aside class="jp26-route-panel">
+<div class="eyebrow">Mapa y ejecución</div>
+<h4>Ruta recomendada</h4>
+<p class="jp26-route-disclaimer">La línea del mapa es una guía visual. Usa Google Maps para navegación real y transporte actualizado.</p>
+<div class="jp26-route-list">
+<div class="jp26-route-stop">
+<b>1. 🚆 Morinomiya Station</b>
+<span>Inicio</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Morinomiya+Station+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>2. 🌳 Osaka Castle Park</b>
+<span>Jardines</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Osaka+Castle+Park+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>3. 🏯 Osaka Castle</b>
+<span>Castillo</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Osaka+Castle+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>4. ☕ Miraiza Osaka-jo</b>
+<span>Descanso</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Miraiza+Osaka-jo+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>5. 📸 Nishinomaru Garden</b>
+<span>Fotografía</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Nishinomaru+Garden+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>6. 🚆 Osakajokoen Station</b>
+<span>Final</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Osakajokoen+Station+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div></div>
+<div class="btn-row">
+<a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Morinomiya+Station&amp;destination=Osakajokoen+Station&amp;waypoints=Osaka+Castle+Park%7COsaka+Castle%7CMiraiza+Osaka-jo%7CNishinomaru+Garden&amp;travelmode=walking" rel="noopener" target="_blank">Abrir ruta completa</a>
+</div>
+</aside>
+</div>
 </div>
 </section></div>
 <div class="guide-block" id="osaka-food"><div class="guide-block-head"><span>🍜</span><div><h3>Restaurantes</h3><p>Solo recomendaciones de OSAKA.</p></div></div><div class="grid g3">
@@ -2140,6 +2741,61 @@
 <h4>🧠 Veredicto JP26</h4>
 <p><strong>JP26 Approved · ★★★★★</strong><br/><br/>Una de las experiencias más fotogénicas y memorables de Kioto; el horario define completamente la calidad.</p>
 </article>
+</div><div class="jp26-integrated-map" data-map-slug="fushimi-inari">
+<div class="jp26-route-cover" style="--route-cover:url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&amp;fit=crop&amp;w=1800&amp;q=85')">
+<div>
+<span class="tpg-badge">JP26 Master Route</span>
+<h3>⛩ Fushimi Inari</h3>
+<p>Torii, sendero y fotografía temprana en una de las rutas esenciales de Kioto.</p>
+<div class="crew-pills">
+<span class="pill">🗺 Mapa interactivo</span>
+<span class="pill">🚶 Ruta visual</span>
+<span class="pill">📍 6 paradas</span>
+</div>
+</div>
+</div>
+<div class="jp26-route-layout">
+<div aria-label="Mapa interactivo de Fushimi Inari" class="jp26-map" id="jp26-map-fushimi-inari"></div>
+<aside class="jp26-route-panel">
+<div class="eyebrow">Mapa y ejecución</div>
+<h4>Ruta recomendada</h4>
+<p class="jp26-route-disclaimer">La línea del mapa es una guía visual. Usa Google Maps para navegación real y transporte actualizado.</p>
+<div class="jp26-route-list">
+<div class="jp26-route-stop">
+<b>1. 🚆 Inari Station</b>
+<span>Inicio</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Inari+Station+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>2. ⛩ Romon Gate</b>
+<span>Entrada</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Romon+Gate+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>3. 🦊 Main Shrine</b>
+<span>Santuario</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Main+Shrine+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>4. 📸 Senbon Torii</b>
+<span>Torii</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Senbon+Torii+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>5. 🥾 Mitsutsuji</b>
+<span>Sendero</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Mitsutsuji+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>6. 🌄 Yotsutsuji Viewpoint</b>
+<span>Mirador</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Yotsutsuji+Viewpoint+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div></div>
+<div class="btn-row">
+<a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Inari+Station&amp;destination=Yotsutsuji+Viewpoint&amp;waypoints=Romon+Gate%7CMain+Shrine%7CSenbon+Torii%7CMitsutsuji&amp;travelmode=walking" rel="noopener" target="_blank">Abrir ruta completa</a>
+</div>
+</aside>
+</div>
 </div>
 </section><section class="tokyo-premium-guide" id="higashiyama-premium">
 <div class="tpg-top">
@@ -2208,6 +2864,61 @@
 <h4>🧠 Veredicto JP26</h4>
 <p><strong>JP26 Approved · ★★★★★</strong><br/><br/>Probablemente el recorrido urbano más completo y fotogénico del viaje.</p>
 </article>
+</div><div class="jp26-integrated-map" data-map-slug="higashiyama">
+<div class="jp26-route-cover" style="--route-cover:url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&amp;fit=crop&amp;w=1800&amp;q=85')">
+<div>
+<span class="tpg-badge">JP26 Master Route</span>
+<h3>🏯 Higashiyama + Kiyomizu-dera</h3>
+<p>Templos, calles históricas, pagodas y la caminata más fotogénica de Kioto.</p>
+<div class="crew-pills">
+<span class="pill">🗺 Mapa interactivo</span>
+<span class="pill">🚶 Ruta visual</span>
+<span class="pill">📍 6 paradas</span>
+</div>
+</div>
+</div>
+<div class="jp26-route-layout">
+<div aria-label="Mapa interactivo de Higashiyama + Kiyomizu-dera" class="jp26-map" id="jp26-map-higashiyama"></div>
+<aside class="jp26-route-panel">
+<div class="eyebrow">Mapa y ejecución</div>
+<h4>Ruta recomendada</h4>
+<p class="jp26-route-disclaimer">La línea del mapa es una guía visual. Usa Google Maps para navegación real y transporte actualizado.</p>
+<div class="jp26-route-list">
+<div class="jp26-route-stop">
+<b>1. 🏯 Kiyomizu-dera</b>
+<span>Inicio temprano</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Kiyomizu-dera+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>2. 🏮 Sannenzaka</b>
+<span>Calle histórica</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Sannenzaka+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>3. 📸 Ninenzaka</b>
+<span>Fotografía</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Ninenzaka+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>4. 🗼 Yasaka Pagoda</b>
+<span>Pagoda</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Yasaka+Pagoda+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>5. ⛩ Kodai-ji</b>
+<span>Templo</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Kodai-ji+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>6. 🏮 Yasaka Shrine</b>
+<span>Final</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Yasaka+Shrine+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div></div>
+<div class="btn-row">
+<a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Kiyomizu-dera&amp;destination=Yasaka+Shrine&amp;waypoints=Sannenzaka%7CNinenzaka%7CYasaka+Pagoda%7CKodai-ji&amp;travelmode=walking" rel="noopener" target="_blank">Abrir ruta completa</a>
+</div>
+</aside>
+</div>
 </div>
 </section><section class="tokyo-premium-guide" id="gion-premium">
 <div class="tpg-top">
@@ -2276,6 +2987,61 @@
 <h4>🧠 Veredicto JP26</h4>
 <p><strong>JP26 Approved · ★★★★☆</strong><br/><br/>Una noche en Gion y Pontocho aporta la atmósfera que muchas personas imaginan cuando piensan en Kioto.</p>
 </article>
+</div><div class="jp26-integrated-map" data-map-slug="gion">
+<div class="jp26-route-cover" style="--route-cover:url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&amp;fit=crop&amp;w=1800&amp;q=85')">
+<div>
+<span class="tpg-badge">JP26 Master Route</span>
+<h3>🏮 Gion + Pontocho</h3>
+<p>Calles tradicionales, río Kamo, cena y ambiente nocturno con respeto.</p>
+<div class="crew-pills">
+<span class="pill">🗺 Mapa interactivo</span>
+<span class="pill">🚶 Ruta visual</span>
+<span class="pill">📍 6 paradas</span>
+</div>
+</div>
+</div>
+<div class="jp26-route-layout">
+<div aria-label="Mapa interactivo de Gion + Pontocho" class="jp26-map" id="jp26-map-gion"></div>
+<aside class="jp26-route-panel">
+<div class="eyebrow">Mapa y ejecución</div>
+<h4>Ruta recomendada</h4>
+<p class="jp26-route-disclaimer">La línea del mapa es una guía visual. Usa Google Maps para navegación real y transporte actualizado.</p>
+<div class="jp26-route-list">
+<div class="jp26-route-stop">
+<b>1. ⛩ Yasaka Shrine</b>
+<span>Inicio</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Yasaka+Shrine+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>2. 🏮 Hanamikoji Street</b>
+<span>Gion</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Hanamikoji+Street+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>3. 📸 Shirakawa Lane</b>
+<span>Canal</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Shirakawa+Lane+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>4. 🚆 Gion-Shijo Station</b>
+<span>Conexión</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Gion-Shijo+Station+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>5. 🍜 Pontocho Alley</b>
+<span>Cena</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Pontocho+Alley+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>6. 🌙 Kamo River</b>
+<span>Cierre</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Kamo+River+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div></div>
+<div class="btn-row">
+<a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Yasaka+Shrine&amp;destination=Kamo+River&amp;waypoints=Hanamikoji+Street%7CShirakawa+Lane%7CGion-Shijo+Station%7CPontocho+Alley&amp;travelmode=walking" rel="noopener" target="_blank">Abrir ruta completa</a>
+</div>
+</aside>
+</div>
 </div>
 </section><section class="tokyo-premium-guide" id="arashiyama-premium">
 <div class="tpg-top">
@@ -2343,6 +3109,61 @@
 <h4>🧠 Veredicto JP26</h4>
 <p><strong>JP26 Approved · ★★★★☆</strong><br/><br/>Muy hermosa, pero depende más del horario y manejo de multitudes que cualquier otra zona de Kioto.</p>
 </article>
+</div><div class="jp26-integrated-map" data-map-slug="arashiyama">
+<div class="jp26-route-cover" style="--route-cover:url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&amp;fit=crop&amp;w=1800&amp;q=85')">
+<div>
+<span class="tpg-badge">JP26 Master Route</span>
+<h3>🎋 Arashiyama</h3>
+<p>Bosque de bambú, templos, río y miradores al oeste de Kioto.</p>
+<div class="crew-pills">
+<span class="pill">🗺 Mapa interactivo</span>
+<span class="pill">🚶 Ruta visual</span>
+<span class="pill">📍 6 paradas</span>
+</div>
+</div>
+</div>
+<div class="jp26-route-layout">
+<div aria-label="Mapa interactivo de Arashiyama" class="jp26-map" id="jp26-map-arashiyama"></div>
+<aside class="jp26-route-panel">
+<div class="eyebrow">Mapa y ejecución</div>
+<h4>Ruta recomendada</h4>
+<p class="jp26-route-disclaimer">La línea del mapa es una guía visual. Usa Google Maps para navegación real y transporte actualizado.</p>
+<div class="jp26-route-list">
+<div class="jp26-route-stop">
+<b>1. 🚆 Saga-Arashiyama Station</b>
+<span>Inicio</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Saga-Arashiyama+Station+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>2. 🎋 Bamboo Grove</b>
+<span>Temprano</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Bamboo+Grove+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>3. 🏯 Tenryu-ji</b>
+<span>Templo</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Tenryu-ji+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>4. 🌉 Togetsukyo Bridge</b>
+<span>Río</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Togetsukyo+Bridge+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>5. 🌳 Arashiyama Park</b>
+<span>Paseo</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Arashiyama+Park+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>6. 🐒 Monkey Park Entrance</b>
+<span>Opcional</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Monkey+Park+Entrance+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div></div>
+<div class="btn-row">
+<a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Saga-Arashiyama+Station&amp;destination=Monkey+Park+Entrance&amp;waypoints=Bamboo+Grove%7CTenryu-ji%7CTogetsukyo+Bridge%7CArashiyama+Park&amp;travelmode=walking" rel="noopener" target="_blank">Abrir ruta completa</a>
+</div>
+</aside>
+</div>
 </div>
 </section><section class="tokyo-premium-guide" id="nishiki-premium">
 <div class="tpg-top">
@@ -2412,6 +3233,61 @@
 <h4>🧠 Veredicto JP26</h4>
 <p><strong>JP26 Approved · ★★★☆☆</strong><br/><br/>Muy útil para comer, comprar y descansar, pero secundario frente a templos y zonas históricas.</p>
 </article>
+</div><div class="jp26-integrated-map" data-map-slug="nishiki">
+<div class="jp26-route-cover" style="--route-cover:url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&amp;fit=crop&amp;w=1800&amp;q=85')">
+<div>
+<span class="tpg-badge">JP26 Master Route</span>
+<h3>🍡 Nishiki Market + Centro</h3>
+<p>Mercado, comida, artesanía, Teramachi y centro comercial de Kioto.</p>
+<div class="crew-pills">
+<span class="pill">🗺 Mapa interactivo</span>
+<span class="pill">🚶 Ruta visual</span>
+<span class="pill">📍 6 paradas</span>
+</div>
+</div>
+</div>
+<div class="jp26-route-layout">
+<div aria-label="Mapa interactivo de Nishiki Market + Centro" class="jp26-map" id="jp26-map-nishiki"></div>
+<aside class="jp26-route-panel">
+<div class="eyebrow">Mapa y ejecución</div>
+<h4>Ruta recomendada</h4>
+<p class="jp26-route-disclaimer">La línea del mapa es una guía visual. Usa Google Maps para navegación real y transporte actualizado.</p>
+<div class="jp26-route-list">
+<div class="jp26-route-stop">
+<b>1. 🍡 Nishiki Market West</b>
+<span>Inicio</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Nishiki+Market+West+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>2. ⛩ Nishiki Tenmangu</b>
+<span>Santuario</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Nishiki+Tenmangu+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>3. 🛍 Teramachi Street</b>
+<span>Shopping</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Teramachi+Street+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>4. 🛍 Shinkyogoku</b>
+<span>Arcade</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Shinkyogoku+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>5. 🏬 Kyoto BAL</b>
+<span>Diseño</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Kyoto+BAL+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div>
+<div class="jp26-route-stop">
+<b>6. 🌙 Kamo River Sanjo</b>
+<span>Cierre</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Kamo+River+Sanjo+Japan" rel="noopener" target="_blank">Abrir punto</a>
+</div></div>
+<div class="btn-row">
+<a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Nishiki+Market+West&amp;destination=Kamo+River+Sanjo&amp;waypoints=Nishiki+Tenmangu%7CTeramachi+Street%7CShinkyogoku%7CKyoto+BAL&amp;travelmode=walking" rel="noopener" target="_blank">Abrir ruta completa</a>
+</div>
+</aside>
+</div>
 </div>
 </section></div>
 <div class="guide-block" id="kioto-food"><div class="guide-block-head"><span>🍜</span><div><h3>Restaurantes</h3><p>Solo recomendaciones de KIOTO.</p></div></div><div class="grid g3">

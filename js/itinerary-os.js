@@ -20,7 +20,18 @@
 
   function usdLabel(value) {
     if (!window.JP26Currency) return '';
-    return `<span class="jp26-usd">≈ ${window.JP26Currency.convertYen(value)}</span>`;
+    return `<span class="jp26-usd">JPY · USD ${window.JP26Currency.convertYen(value)} · MXN ${window.JP26Currency.convertYenToMxn(value)}</span>`;
+  }
+
+  function timeLabel(value) {
+    return window.JP26FormatTime ? window.JP26FormatTime(value) : value;
+  }
+
+  function dateHeading(day) {
+    const parts = day.date.split(' ');
+    const months = {OCT:'October'};
+    const weekdays = {Lunes:'Monday',Martes:'Tuesday',Miércoles:'Wednesday',Jueves:'Thursday',Viernes:'Friday',Sábado:'Saturday',Domingo:'Sunday'};
+    return {date:(months[parts[1]] || parts[1]) + ' ' + Number(parts[0]),weekday:weekdays[day.weekday] || day.weekday};
   }
 
   function renderDateStrip() {
@@ -45,7 +56,7 @@
   function scheduleHTML(schedule) {
     return schedule.map(item => `
       <div class="ios-schedule-row">
-        <time>${escapeHTML(item[0])}</time>
+        <time>${escapeHTML(timeLabel(item[0]))}</time>
         <span>${escapeHTML(item[2])}</span>
         <b>${escapeHTML(item[1])}</b>
       </div>
@@ -66,12 +77,14 @@
     const day = days[selectedIndex];
     const completedKey = 'jp26:itinerary-complete:' + day.id;
     const completed = localStorage.getItem(completedKey) === '1';
+    const heading = dateHeading(day);
 
     el('ios-day-view').innerHTML = `
       <article class="ios-day-hero" style="--day-image:url('${day.image}')">
         <div class="ios-day-hero-content">
-          <span class="ios-day-label">DAY ${String(day.day).padStart(2,'0')} · ${escapeHTML(day.weekday)} · ${escapeHTML(day.status)}</span>
-          <h2>${escapeHTML(day.title)}</h2>
+          <div class="ios-date-heading"><h2>${escapeHTML(heading.date)}</h2><strong>${escapeHTML(heading.weekday)}</strong></div>
+          <span class="ios-day-label">DAY ${String(day.day).padStart(2,'0')} · ${escapeHTML(day.status)}</span>
+          <h3 class="ios-day-title">${escapeHTML(day.title)}</h3>
           <p>${escapeHTML(day.subtitle)}</p>
           <div class="ios-day-actions">
             <a class="btn" href="${day.href}">Abrir guía relacionada</a>
@@ -81,7 +94,7 @@
       </article>
 
       <div class="ios-status-grid">
-        <article class="ios-status-card"><small>Horario</small><b>${escapeHTML(day.start)}–${escapeHTML(day.end)}</b></article>
+        <article class="ios-status-card"><small>Horario</small><b>${escapeHTML(timeLabel(day.start))}–${escapeHTML(timeLabel(day.end))}</b></article>
         <article class="ios-status-card"><small>Distancia</small><b>${escapeHTML(day.distance)}</b></article>
         <article class="ios-status-card"><small>Pasos</small><b>${escapeHTML(day.steps)}</b></article>
         <article class="ios-status-card ios-budget-yen" data-yen="${day.budgetYen}"><small>Presupuesto</small><b>${yen(day.budgetYen)}${usdLabel(day.budgetYen)}</b></article>
@@ -144,7 +157,7 @@
           <p>${escapeHTML(day.subtitle)}</p>
           <footer>
             <span>${yen(day.budgetYen)} ${usdLabel(day.budgetYen)}</span>
-            <span>${escapeHTML(day.start)}</span>
+            <span>${escapeHTML(timeLabel(day.start))}</span>
           </footer>
         </button>
       `;

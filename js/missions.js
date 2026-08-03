@@ -24,8 +24,8 @@ function render(data){
     `⭐ ${data.score} JP26 Score`, `⏱ ${data.duration}`, `💴 ${data.budget}`, `🎟 ${data.reservation}`
   ].map(x=>`<span>${x}</span>`).join('');
 
-  qs('missionMetrics').innerHTML=data.metrics.map(m=>`<div class="mission-metric"><small>${escapeHtml(m[0])}</small><strong>${escapeHtml(m[1])}</strong></div>`).join('');
-  qs('missionTimeline').innerHTML=data.timeline.map(t=>`<div class="mission-time-card"><time>${escapeHtml(t[0])}</time><b>${escapeHtml(t[1])}</b></div>`).join('');
+  qs('missionMetrics').innerHTML=data.metrics.map(m=>`<div class="mission-metric"><small>${escapeHtml(m[0])}</small><strong>${escapeHtml(window.JP26FormatTime(m[1]))}</strong></div>`).join('');
+  qs('missionTimeline').innerHTML=data.timeline.map(t=>`<div class="mission-time-card"><time>${escapeHtml(window.JP26FormatTime(t[0]))}</time><b>${escapeHtml(t[1])}</b></div>`).join('');
 
   qs('missionPriorities').innerHTML=`
     <article class="priority-card must"><h3>🔥 Imprescindibles</h3>${renderList(data.must)}</article>

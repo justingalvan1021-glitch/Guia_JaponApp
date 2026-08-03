@@ -64,7 +64,7 @@
       hour: '2-digit',
       minute: '2-digit',
       second: includeSeconds ? '2-digit' : undefined,
-      hour12: false
+      hour12: true
     }).format(new Date());
   }
 

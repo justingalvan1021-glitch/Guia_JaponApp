@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
 <meta content="#080b12" name="theme-color"/>
-<title>JP26 v4.5 — Itinerary OS</title>
+<title>JP26 v4.6 — Japan Adventure OS</title>
 <link crossorigin="" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" rel="stylesheet"/><link href="css/style.css" rel="stylesheet"/><link href="css/dashboard.css" rel="stylesheet"/><script crossorigin="" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><link href="manifest.json" rel="manifest"/><meta content="yes" name="apple-mobile-web-app-capable"/><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/><meta content="JP26" name="apple-mobile-web-app-title"/><link href="css/mission-hub.css" rel="stylesheet"/><link href="css/weather.css" rel="stylesheet"/><link href="css/currency.css" rel="stylesheet"/><link href="css/itinerary-os.css" rel="stylesheet"/></head>
 <body>
 <input class="menu-toggle" id="menu" type="checkbox"/>
@@ -13,19 +13,28 @@
 <label class="shade" for="menu"></label>
 <aside class="sidebar">
 <div class="brand"><div class="brand-mark"><span class="sun"></span><div><h1>JP26</h1><small>Japan Adventure OS · 1.0</small></div></div></div>
-<div class="nav">
-<div class="nav-title">Viaje</div>
+<nav class="nav" aria-label="Navegación principal">
+<details class="nav-group" open><summary>Viaje</summary>
 <a href="#inicio"><span class="ico">⌂</span> Inicio</a>
-<a href="#itinerario"><span class="ico">🗓</span> Itinerario Premium</a>
+<a href="#itinerario"><span class="ico">🗓</span> Itinerario</a>
 <a href="#misiones"><span class="ico">🎯</span> Actividades principales</a>
-<div class="nav-title">Guías por ciudad</div>
+</details>
+<details class="nav-group" open><summary>Information</summary>
+<a href="#information-weather"><span class="ico">☀</span> Weather</a>
+<a href="#information-currency"><span class="ico">¥</span> Currency</a>
+<a href="#information-time"><span class="ico">◷</span> Time Zones</a>
+</details>
+<details class="nav-group" open><summary>Guías por ciudad</summary>
 <a href="#tokio"><span class="ico">🗼</span> Tokio</a>
 <a href="#osaka"><span class="ico">🌃</span> Osaka</a>
 <a href="#kioto"><span class="ico">⛩</span> Kioto</a>
-<div class="nav-title">Herramientas</div>
-<a href="#survival"><span class="ico">🎒</span> Survival Guide</a><a href="#apps"><span class="ico">📱</span> Apps</a>
+</details>
+<details class="nav-group" open><summary>Herramientas</summary>
+<a href="#survival"><span class="ico">🎒</span> Survival Guide</a>
+<a href="#apps"><span class="ico">📱</span> Apps</a>
 <a href="#crew"><span class="ico">👥</span> The Crew</a>
-</div>
+</details>
+</nav>
 <div class="side-card"><strong>15–27 OCT 2026</strong><span>SLC → Tokyo → Osaka → Kyoto → Tokyo</span></div>
 </aside>
 <main>
@@ -37,8 +46,6 @@
 <span><b>JP26</b><small>Japan Adventure OS</small></span>
 </a>
 <div class="v4-live-strip">
-<span class="v4-clock-pill"><b>🇯🇵 Tokyo</b><time id="jp26-time-tokyo">--:--</time></span>
-<span class="v4-clock-pill"><b>🇺🇸 SLC</b><time id="jp26-time-slc">--:--</time></span>
 <span class="v4-online-state" id="jp26-network-state">● Online</span>
 </div>
 </header>
@@ -71,7 +78,7 @@
 <p>Asakusa · Nakamise · Sensō-ji · Akihabara</p>
 </div>
 <div class="v4-next-metrics">
-<span><b>07:30</b><small>Salida</small></span>
+<span><b>7:30 AM</b><small>Salida</small></span>
 <span><b>6</b><small>Paradas</small></span>
 <span><b>12–15 km</b><small>Caminata</small></span>
 </div>
@@ -208,9 +215,36 @@
 <a href="#crew"><span>👥</span><b>The Crew</b><small>Justin · Huerta · Aram</small></a>
 </div>
 </section>
-<footer class="v4-home-footer">JP26 v4.1 · Japan Adventure OS</footer>
+<footer class="v4-home-footer">JP26 v4.6 · Japan Adventure OS</footer>
 </div>
 </div>
+</section>
+<section class="wrap app-section information-page" id="information">
+<header class="information-hero">
+<div class="eyebrow">JP26 INFORMATION CENTER</div>
+<h2>INFORMATION</h2>
+<p>Clima, conversión de moneda y horarios del Crew reunidos en un solo lugar.</p>
+</header>
+<nav class="information-tabs" aria-label="Information">
+<a href="#information-weather">Weather</a><a href="#information-currency">Currency</a><a href="#information-time">Time Zones</a>
+</nav>
+<div id="information-weather" class="information-anchor"></div>
+<section class="v4-section information-currency" id="information-currency">
+<div class="v4-section-head"><div><div class="eyebrow">CURRENCY</div><h3>JPY · USD · MXN</h3><p>Convierte rápidamente usando la última tasa disponible.</p></div></div>
+<div class="currency-converter">
+<label><span>Cantidad en JPY</span><input id="jp26-currency-input" inputmode="numeric" min="0" step="100" type="number" value="10000"></label>
+<div class="currency-result"><small>USD</small><strong id="jp26-currency-usd">—</strong></div>
+<div class="currency-result"><small>MXN</small><strong id="jp26-currency-mxn">—</strong></div>
+</div>
+<p class="currency-rate-note" id="jp26-currency-rate-note">Cargando tasas…</p>
+</section>
+<section class="v4-section information-time" id="information-time">
+<div class="v4-section-head"><div><div class="eyebrow">TIME ZONES</div><h3>Hora del Crew</h3><p>Todas las horas se muestran en formato AM/PM.</p></div></div>
+<div class="time-zone-grid">
+<article><span>🇯🇵</span><small>Tokyo · JST</small><time id="jp26-time-tokyo">--:--</time></article>
+<article><span>🇺🇸</span><small>Salt Lake City · MT</small><time id="jp26-time-slc">--:--</time></article>
+</div>
+</section>
 </section>
 <section class="wrap app-section" id="misiones">
 <div class="mission-hub">
@@ -308,7 +342,7 @@
 </div>
 </a></div>
 </div>
-<footer class="footer">JP26 v4.2 · Mission Control</footer>
+<footer class="footer">JP26 v4.6 · Mission Control</footer>
 </div>
 </section>
 <section class="wrap app-section" id="itinerario">
@@ -4018,6 +4052,6 @@
 <div class="section-head"><div><div class="eyebrow">The crew</div><h2>Tres estilos, una misión</h2></div></div>
 <div class="grid g3"><div class="card card-pad"><h3>📸 Justin</h3><p>Planner, fotógrafo, parques, tecnología y Birthday Boss.</p></div><div class="card card-pad"><h3>🥾 Huerta</h3><p>Runner, hiking, tranquilo, Pokémon y compras que no necesitaba.</p></div><div class="card card-pad"><h3>🍜 Aram</h3><p>Buena comida, ritmo tranquilo y listo para el desmadre.</p></div></div>
 </section>
-<footer class="footer">JP26 1.0 · Stable CSS Navigation Build · Justin, Huerta &amp; Aram · October 2026<br/><small>Sin imágenes externas. Las rutas quedan integradas dentro de cada día; los eventos se actualizarán antes del viaje.</small></footer>
+<footer class="footer">JP26 v4.6 · Justin, Huerta &amp; Aram · October 2026<br/><small>Las rutas quedan integradas dentro de cada día; los eventos se actualizarán antes del viaje.</small></footer>
 </main>
 <script defer="True" src="js/app.js"></script><script defer="True" src="js/japanese.js"></script><script defer="True" src="js/maps.js"></script><script defer="True" src="js/dashboard.js"></script><script defer="True" src="js/weather.js"></script><script defer="True" src="js/currency.js"></script><script defer="True" src="js/itinerary-os.js"></script></body></html>

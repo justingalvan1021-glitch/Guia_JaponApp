@@ -55,3 +55,14 @@ Mission Control completo para las siete actividades principales. Consulta `docs/
 - Itinerary OS completamente rediseñado.
 - Trece días con hero, timeline, presupuesto, transporte, prioridades y notas.
 - Progreso del itinerario conectado al Home.
+
+## v4.6 — Sprint 1
+
+- Sidebar compacto estilo VS Code con secciones desplegables.
+- Nueva vista Information con Weather, Currency y Time Zones.
+- Weather y relojes trasladados fuera del Home.
+- Horarios dinámicos en formato AM/PM.
+- Itinerary prioriza fecha y día de la semana; `Day N` queda secundario.
+- Actividades y presupuestos muestran JPY, USD y MXN.
+- Survival Guide dividido en vistas independientes mediante rutas hash.
+- Continúa siendo una aplicación estática compatible con GitHub Pages.

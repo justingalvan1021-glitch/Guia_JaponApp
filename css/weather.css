@@ -1,0 +1,84 @@
+
+/* JP26 v4.3 — Live Weather & World Clocks */
+.v4-live-strip{flex-wrap:nowrap}
+.v4-clock-pill{display:flex!important;align-items:center;gap:7px}
+.v4-clock-pill b{font-size:10px;color:var(--muted)}
+.v4-clock-pill time{font-weight:900;font-variant-numeric:tabular-nums}
+.jp26-weather-section{position:relative}
+.jp26-weather-section .v4-section-head p{margin-top:5px}
+.jp26-weather-updated{font-size:11px;color:var(--muted);white-space:nowrap}
+.jp26-weather-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.jp26-weather-tabs button{
+  cursor:pointer;padding:9px 12px;border-radius:999px;border:1px solid var(--line);
+  background:rgba(255,255,255,.04);color:var(--text);font:inherit;
+  font-size:12px;font-weight:850;transition:.2s
+}
+.jp26-weather-tabs button:hover{background:rgba(255,255,255,.08)}
+.jp26-weather-tabs button.active{
+  background:linear-gradient(90deg,rgba(255,59,77,.22),rgba(72,167,255,.12));
+  border-color:rgba(72,167,255,.28);box-shadow:inset 3px 0 0 var(--red)
+}
+.jp26-weather-board{
+  display:grid;grid-template-columns:1.05fr 1.15fr .8fr;gap:12px
+}
+.jp26-weather-main,.jp26-weather-advice,.jp26-weather-metrics article{
+  background:linear-gradient(145deg,rgba(22,28,40,.97),rgba(12,16,24,.97));
+  border:1px solid var(--line);border-radius:22px
+}
+.jp26-weather-main{
+  min-height:235px;padding:24px;display:flex;flex-direction:column;
+  justify-content:space-between;position:relative;overflow:hidden
+}
+.jp26-weather-main:after{
+  content:"";position:absolute;width:190px;height:190px;border-radius:50%;
+  right:-72px;top:-80px;background:rgba(72,167,255,.08)
+}
+.jp26-weather-city{font-size:11px;text-transform:uppercase;letter-spacing:.17em;color:var(--blue);font-weight:900}
+.jp26-weather-condition{display:flex;align-items:center;gap:15px;margin-top:14px}
+.jp26-weather-icon{font-size:58px;line-height:1}
+.jp26-weather-condition strong{display:block;font-size:clamp(48px,6vw,76px);line-height:.85;letter-spacing:-.06em}
+.jp26-weather-condition div>span{display:block;color:var(--muted);font-size:13px;margin-top:9px}
+.jp26-weather-local-time{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap}
+.jp26-weather-local-time small{color:var(--muted)}
+.jp26-weather-local-time strong{font-size:21px;font-variant-numeric:tabular-nums}
+.jp26-weather-local-time span{font-size:12px;color:var(--muted)}
+.jp26-weather-metrics{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.jp26-weather-metrics article{padding:18px;display:flex;flex-direction:column;justify-content:center;min-height:110px}
+.jp26-weather-metrics article>span{font-size:24px}
+.jp26-weather-metrics small{color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.1em;margin-top:7px}
+.jp26-weather-metrics b{font-size:21px;margin-top:3px}
+.jp26-weather-advice{padding:22px;display:flex;gap:14px;align-items:flex-start;background:linear-gradient(145deg,rgba(255,204,102,.11),rgba(12,16,24,.97))}
+.jp26-weather-advice-icon{font-size:33px}
+.jp26-weather-advice small{color:var(--gold);font-size:10px;font-weight:900;letter-spacing:.12em}
+.jp26-weather-advice h4{font-size:19px;margin:7px 0}
+.jp26-weather-advice p{color:#ded9c8;margin:0;font-size:13px}
+.jp26-weather-dual{
+  display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;
+  margin-top:12px;padding:15px;border-radius:19px;background:rgba(255,255,255,.035);
+  border:1px solid var(--line)
+}
+.jp26-weather-dual article{display:flex;align-items:center;gap:11px}
+.jp26-weather-dual article:last-child{justify-content:flex-end;text-align:right}
+.jp26-weather-dual article>span{font-size:27px}
+.jp26-weather-dual small,.jp26-time-difference small{display:block;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.1em}
+.jp26-weather-dual strong{display:block;font-size:16px;margin-top:3px;font-variant-numeric:tabular-nums}
+.jp26-time-difference{text-align:center;padding:0 16px;border-left:1px solid var(--line);border-right:1px solid var(--line)}
+.jp26-time-difference strong{display:block;font-size:14px;margin-top:2px;color:var(--gold)}
+.jp26-weather-notice{margin-top:10px;padding:11px 14px;border-radius:12px;background:rgba(255,59,77,.09);border:1px solid rgba(255,59,77,.2);font-size:12px;color:#ffb5bc}
+.jp26-weather-loading{opacity:.62}
+@media(max-width:1100px){
+  .jp26-weather-board{grid-template-columns:1fr 1fr}
+  .jp26-weather-advice{grid-column:1/-1}
+}
+@media(max-width:760px){
+  .v4-live-strip{gap:5px}.v4-clock-pill{padding:6px 8px!important}
+  .v4-clock-pill b{display:none}.v4-clock-pill time{font-size:11px}
+  .jp26-weather-tabs{overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px}
+  .jp26-weather-tabs button{white-space:nowrap}
+  .jp26-weather-board{grid-template-columns:1fr}
+  .jp26-weather-advice{grid-column:auto}
+  .jp26-weather-main{min-height:220px}
+  .jp26-weather-dual{grid-template-columns:1fr}
+  .jp26-weather-dual article,.jp26-weather-dual article:last-child{justify-content:flex-start;text-align:left}
+  .jp26-time-difference{border:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:10px 0;text-align:left}
+}

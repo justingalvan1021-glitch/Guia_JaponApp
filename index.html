@@ -5,8 +5,8 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
 <meta content="#080b12" name="theme-color"/>
-<title>JP26 v4.1 — Japan Adventure OS</title>
-<link crossorigin="" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" rel="stylesheet"/><link href="css/style.css" rel="stylesheet"/><link href="css/dashboard.css" rel="stylesheet"/><script crossorigin="" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><link href="manifest.json" rel="manifest"/><meta content="yes" name="apple-mobile-web-app-capable"/><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/><meta content="JP26" name="apple-mobile-web-app-title"/><link href="css/mission-hub.css" rel="stylesheet"/></head>
+<title>JP26 v4.3 — Live Weather &amp; World Clocks</title>
+<link crossorigin="" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" rel="stylesheet"/><link href="css/style.css" rel="stylesheet"/><link href="css/dashboard.css" rel="stylesheet"/><script crossorigin="" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><link href="manifest.json" rel="manifest"/><meta content="yes" name="apple-mobile-web-app-capable"/><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/><meta content="JP26" name="apple-mobile-web-app-title"/><link href="css/mission-hub.css" rel="stylesheet"/><link href="css/weather.css" rel="stylesheet"/></head>
 <body>
 <input class="menu-toggle" id="menu" type="checkbox"/>
 <label aria-label="Abrir menú" class="hamb" for="menu">☰</label>
@@ -37,9 +37,9 @@
 <span><b>JP26</b><small>Japan Adventure OS</small></span>
 </a>
 <div class="v4-live-strip">
-<span>🇯🇵 Japón</span>
-<span id="v4-tokyo-time">Tokyo --:--</span>
-<span class="v4-online-state">● Online</span>
+<span class="v4-clock-pill"><b>🇯🇵 Tokyo</b><time id="jp26-time-tokyo">--:--</time></span>
+<span class="v4-clock-pill"><b>🇺🇸 SLC</b><time id="jp26-time-slc">--:--</time></span>
+<span class="v4-online-state" id="jp26-network-state">● Online</span>
 </div>
 </header>
 <div class="v4-home-shell">
@@ -91,7 +91,74 @@
 <p>Salida desde Salt Lake City el 15 de octubre de 2026.</p>
 </article>
 </section>
-<section class="v4-section">
+<section class="v4-section jp26-weather-section" id="jp26-live-weather">
+<div class="v4-section-head">
+<div>
+<div class="eyebrow">LIVE CONDITIONS</div>
+<h3>Clima y hora en tiempo real</h3>
+<p>Consulta las condiciones actuales antes de ajustar el plan del día.</p>
+</div>
+<div class="jp26-weather-updated">
+      Actualizado <span id="jp26-weather-updated">--:--</span>
+</div>
+</div>
+<div aria-label="Seleccionar ciudad" class="jp26-weather-tabs" role="tablist">
+<button class="active" data-weather-location="tokyo" type="button">🗼 Tokio</button>
+<button data-weather-location="osaka" type="button">🌃 Osaka</button>
+<button data-weather-location="kyoto" type="button">⛩ Kioto</button>
+<button data-weather-location="slc" type="button">🏔 SLC</button>
+</div>
+<div class="jp26-weather-board">
+<article class="jp26-weather-main">
+<div>
+<div class="jp26-weather-city" id="jp26-weather-city">Tokio</div>
+<div class="jp26-weather-condition">
+<span class="jp26-weather-icon" id="jp26-weather-icon">⌛</span>
+<div>
+<strong id="jp26-weather-temp">--°</strong>
+<span id="jp26-weather-description">Cargando condiciones…</span>
+</div>
+</div>
+</div>
+<div class="jp26-weather-local-time">
+<small>Hora local</small>
+<strong id="jp26-weather-local-time">--:--</strong>
+<span id="jp26-weather-local-date">---</span>
+</div>
+</article>
+<div class="jp26-weather-metrics">
+<article><span>🌡</span><small>Sensación</small><b id="jp26-weather-apparent">--°</b></article>
+<article><span>🌧</span><small>Precipitación</small><b id="jp26-weather-rain">-- mm</b></article>
+<article><span>💧</span><small>Humedad</small><b id="jp26-weather-humidity">--%</b></article>
+<article><span>💨</span><small>Viento</small><b id="jp26-weather-wind">-- km/h</b></article>
+</div>
+<aside class="jp26-weather-advice">
+<div class="jp26-weather-advice-icon" id="jp26-weather-advice-icon">🎒</div>
+<div>
+<small>JP26 WEATHER TIP</small>
+<h4 id="jp26-weather-advice-title">Preparando recomendación</h4>
+<p id="jp26-weather-advice-text">El consejo cambiará según las condiciones actuales.</p>
+</div>
+</aside>
+</div>
+<div class="jp26-weather-dual">
+<article>
+<span>🇯🇵</span>
+<div><small>Tokio ahora</small><strong id="jp26-weather-summary-tokyo">--° · --:--</strong></div>
+</article>
+<div class="jp26-time-difference">
+<small>Diferencia horaria</small>
+<strong id="jp26-time-difference">-- horas</strong>
+</div>
+<article>
+<span>🇺🇸</span>
+<div><small>Salt Lake City ahora</small><strong id="jp26-weather-summary-slc">--° · --:--</strong></div>
+</article>
+</div>
+<div class="jp26-weather-notice" hidden="" id="jp26-weather-notice">
+    No fue posible actualizar el clima. Se muestran los últimos datos guardados, si existen.
+  </div>
+</section><section class="v4-section">
 <div class="v4-section-head">
 <div>
 <div class="eyebrow">LIVE ITINERARY</div>
@@ -4090,4 +4157,4 @@
 </section>
 <footer class="footer">JP26 1.0 · Stable CSS Navigation Build · Justin, Huerta &amp; Aram · October 2026<br/><small>Sin imágenes externas. Las rutas quedan integradas dentro de cada día; los eventos se actualizarán antes del viaje.</small></footer>
 </main>
-<script defer="True" src="js/app.js"></script><script defer="True" src="js/japanese.js"></script><script defer="True" src="js/maps.js"></script><script defer="True" src="js/dashboard.js"></script></body></html>
+<script defer="True" src="js/app.js"></script><script defer="True" src="js/japanese.js"></script><script defer="True" src="js/maps.js"></script><script defer="True" src="js/dashboard.js"></script><script defer="True" src="js/weather.js"></script></body></html>

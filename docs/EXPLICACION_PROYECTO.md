@@ -113,3 +113,29 @@ GitHub Pages
 ## 8. Recomendación
 
 Edita contenido en JSON y diseño en CSS. Evita poner información nueva directamente dentro del JavaScript.
+
+## 9. Clima y relojes mundiales — v4.3
+
+El módulo `js/weather.js` realiza tres trabajos:
+
+1. Calcula la hora de Tokio y Salt Lake City con `Intl.DateTimeFormat`.
+2. Consulta el clima actual usando Open-Meteo.
+3. Guarda la respuesta más reciente en `localStorage` para mostrar un respaldo sin conexión.
+
+Las ubicaciones están separadas en:
+
+```text
+data/locations.json
+```
+
+La aplicación pide estas variables:
+
+- Temperatura.
+- Sensación térmica.
+- Humedad.
+- Precipitación.
+- Código meteorológico.
+- Velocidad del viento.
+- Día o noche.
+
+La interfaz se actualiza cada segundo para los relojes y cada 15 minutos para el clima.

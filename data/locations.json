@@ -1,0 +1,30 @@
+{
+  "tokyo": {
+    "name": "Tokio",
+    "latitude": 35.6762,
+    "longitude": 139.6503,
+    "timezone": "Asia/Tokyo",
+    "locale": "ja-JP"
+  },
+  "osaka": {
+    "name": "Osaka",
+    "latitude": 34.6937,
+    "longitude": 135.5023,
+    "timezone": "Asia/Tokyo",
+    "locale": "ja-JP"
+  },
+  "kyoto": {
+    "name": "Kioto",
+    "latitude": 35.0116,
+    "longitude": 135.7681,
+    "timezone": "Asia/Tokyo",
+    "locale": "ja-JP"
+  },
+  "slc": {
+    "name": "Salt Lake City",
+    "latitude": 40.7608,
+    "longitude": -111.891,
+    "timezone": "America/Denver",
+    "locale": "en-US"
+  }
+}

@@ -38,3 +38,12 @@ Se integraron mapas, imágenes y rutas visuales dentro de las 17 Master Cards de
 ## v4.2
 
 Mission Control completo para las siete actividades principales. Consulta `docs/EXPLICACION_PROYECTO.md`.
+
+## v4.3
+
+- Hora en tiempo real de Tokio y Salt Lake City.
+- Diferencia horaria calculada automáticamente, incluyendo cambios de horario de verano.
+- Clima actual de Tokio, Osaka, Kioto y SLC.
+- Consejos de JP26 según lluvia, viento y temperatura.
+- Respaldo de los últimos datos mediante `localStorage`.
+- Actualización automática cada 15 minutos.

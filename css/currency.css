@@ -1,0 +1,8 @@
+
+/* JP26 v4.4 — Live Currency */
+.jp26-usd{
+  display:inline-block;margin-left:6px;color:var(--green);
+  font-size:.82em;font-weight:800;white-space:nowrap
+}
+.jp26-rate-note{color:var(--muted);font-size:11px}
+.jp26-currency-stale{color:var(--gold)}

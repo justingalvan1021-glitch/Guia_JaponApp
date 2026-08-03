@@ -1,0 +1,819 @@
+[
+  {
+    "id": "day-01",
+    "day": 1,
+    "date": "15 OCT",
+    "weekday": "Jueves",
+    "city": "Transit",
+    "cityKey": "transit",
+    "title": "SLC → Seoul",
+    "subtitle": "Comienza la misión",
+    "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=88",
+    "start": "07:00",
+    "end": "Todo el día",
+    "distance": "Viaje",
+    "steps": "Aeropuertos",
+    "budgetYen": 12000,
+    "weatherCity": "slc",
+    "status": "Preparación",
+    "href": "#itinerario",
+    "transport": [
+      "SLC Airport",
+      "Vuelo internacional",
+      "ICN Connection"
+    ],
+    "schedule": [
+      [
+        "07:00",
+        "Salir rumbo al aeropuerto",
+        "✈️"
+      ],
+      [
+        "09:30",
+        "Check-in y seguridad",
+        "🎟"
+      ],
+      [
+        "12:00",
+        "Vuelo internacional",
+        "🛫"
+      ],
+      [
+        "Noche",
+        "Descanso en vuelo",
+        "😴"
+      ]
+    ],
+    "priorities": [
+      "Pasaportes",
+      "Documentos offline",
+      "Power banks",
+      "Cambio de ropa"
+    ],
+    "food": [
+      "Comida antes de abordar",
+      "Snacks para el vuelo"
+    ],
+    "notes": "El objetivo es llegar descansados y con todos los documentos accesibles."
+  },
+  {
+    "id": "day-02",
+    "day": 2,
+    "date": "16 OCT",
+    "weekday": "Viernes",
+    "city": "Tokyo",
+    "cityKey": "tokyo",
+    "title": "Arrival + Oshiage",
+    "subtitle": "Primera noche en Japón",
+    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1800&q=88",
+    "start": "18:00",
+    "end": "23:00",
+    "distance": "5 km",
+    "steps": "7,000",
+    "budgetYen": 9000,
+    "weatherCity": "tokyo",
+    "status": "Arrival",
+    "href": "#tokio",
+    "transport": [
+      "Haneda / Narita",
+      "Train to Oshiage",
+      "Walk to ONE@Tokyo"
+    ],
+    "schedule": [
+      [
+        "18:00",
+        "Llegada y migración",
+        "🛬"
+      ],
+      [
+        "20:00",
+        "Traslado a Oshiage",
+        "🚆"
+      ],
+      [
+        "21:30",
+        "Check-in ONE@Tokyo",
+        "🏨"
+      ],
+      [
+        "22:00",
+        "Konbini y cena ligera",
+        "🏪"
+      ]
+    ],
+    "priorities": [
+      "IC card",
+      "Efectivo",
+      "Internet",
+      "Dormir temprano"
+    ],
+    "food": [
+      "Konbini cerca del hotel",
+      "Cena rápida en Oshiage"
+    ],
+    "notes": "No agregar actividades pesadas; proteger el descanso."
+  },
+  {
+    "id": "day-03",
+    "day": 3,
+    "date": "17 OCT",
+    "weekday": "Sábado",
+    "city": "Tokyo",
+    "cityKey": "tokyo",
+    "title": "Old Tokyo + Skytree",
+    "subtitle": "Asakusa, Akihabara y skyline",
+    "image": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1800&q=88",
+    "start": "07:30",
+    "end": "21:00",
+    "distance": "12–15 km",
+    "steps": "18,000",
+    "budgetYen": 14000,
+    "weatherCity": "tokyo",
+    "status": "Master Day",
+    "href": "#asakusa-premium",
+    "transport": [
+      "Walk to Skytree",
+      "Asakusa Line",
+      "JR to Akihabara"
+    ],
+    "schedule": [
+      [
+        "07:30",
+        "Salir del hotel",
+        "🏨"
+      ],
+      [
+        "08:00",
+        "Kaminarimon",
+        "🏮"
+      ],
+      [
+        "09:00",
+        "Sensō-ji",
+        "⛩"
+      ],
+      [
+        "10:30",
+        "Nakamise",
+        "🍡"
+      ],
+      [
+        "13:00",
+        "Akihabara",
+        "🎮"
+      ],
+      [
+        "18:00",
+        "Shibuya / Skyline",
+        "🌆"
+      ]
+    ],
+    "priorities": [
+      "Fotos temprano",
+      "Sensō-ji",
+      "Shopping Akihabara",
+      "Sunset"
+    ],
+    "food": [
+      "Snack en Nakamise",
+      "Ramen en Akihabara"
+    ],
+    "notes": "Usar la Master Card integrada de Asakusa para la ruta completa."
+  },
+  {
+    "id": "day-04",
+    "day": 4,
+    "date": "18 OCT",
+    "weekday": "Domingo",
+    "city": "Tokyo",
+    "cityKey": "tokyo",
+    "title": "Tokyo DisneySea",
+    "subtitle": "Fantasy Springs mission",
+    "image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1800&q=88",
+    "start": "06:30",
+    "end": "21:00",
+    "distance": "15 km",
+    "steps": "22,000",
+    "budgetYen": 23000,
+    "weatherCity": "tokyo",
+    "status": "Critical Mission",
+    "href": "activities/disneysea.html",
+    "transport": [
+      "Keiyo Line",
+      "Maihama",
+      "Disney Resort Line"
+    ],
+    "schedule": [
+      [
+        "06:30",
+        "Salir del hotel",
+        "🚆"
+      ],
+      [
+        "07:30",
+        "Llegar y formarse",
+        "🎟"
+      ],
+      [
+        "09:00",
+        "Fantasy Springs",
+        "🏰"
+      ],
+      [
+        "13:00",
+        "Comida",
+        "🍜"
+      ],
+      [
+        "19:30",
+        "Show nocturno",
+        "✨"
+      ],
+      [
+        "21:00",
+        "Regreso",
+        "🚆"
+      ]
+    ],
+    "priorities": [
+      "Fantasy Springs",
+      "Journey",
+      "Soaring",
+      "Show nocturno"
+    ],
+    "food": [
+      "Casbah Food Court",
+      "Snacks temáticos"
+    ],
+    "notes": "No detenerse a tomar fotos al entrar."
+  },
+  {
+    "id": "day-05",
+    "day": 5,
+    "date": "19 OCT",
+    "weekday": "Lunes",
+    "city": "Tokyo",
+    "cityKey": "tokyo",
+    "title": "Ghibli + teamLab",
+    "subtitle": "Arte, animación y Odaiba",
+    "image": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=1800&q=88",
+    "start": "08:00",
+    "end": "21:30",
+    "distance": "10 km",
+    "steps": "15,000",
+    "budgetYen": 13000,
+    "weatherCity": "tokyo",
+    "status": "Reservation Day",
+    "href": "activities/ghibli.html",
+    "transport": [
+      "JR Chuo to Mitaka",
+      "Transfer to Toyosu",
+      "Yurikamome"
+    ],
+    "schedule": [
+      [
+        "08:00",
+        "Salir a Mitaka",
+        "🚆"
+      ],
+      [
+        "10:00",
+        "Ghibli Museum",
+        "🎬"
+      ],
+      [
+        "13:00",
+        "Kichijoji",
+        "🍜"
+      ],
+      [
+        "17:30",
+        "Toyosu",
+        "🚇"
+      ],
+      [
+        "19:00",
+        "teamLab Planets",
+        "🌈"
+      ]
+    ],
+    "priorities": [
+      "Puntualidad Ghibli",
+      "Cortometraje",
+      "teamLab con horario"
+    ],
+    "food": [
+      "Kichijoji lunch",
+      "Toyosu snack"
+    ],
+    "notes": "Día de reservas; no improvisar traslados."
+  },
+  {
+    "id": "day-06",
+    "day": 6,
+    "date": "20 OCT",
+    "weekday": "Martes",
+    "city": "Osaka",
+    "cityKey": "osaka",
+    "title": "Tokyo → Osaka",
+    "subtitle": "Shinkansen + Dotonbori",
+    "image": "https://images.unsplash.com/photo-1590559899731-a382839e5549?auto=format&fit=crop&w=1800&q=88",
+    "start": "08:00",
+    "end": "23:00",
+    "distance": "8 km",
+    "steps": "12,000",
+    "budgetYen": 22000,
+    "weatherCity": "osaka",
+    "status": "Transfer",
+    "href": "#namba-premium",
+    "transport": [
+      "Tokyo Station",
+      "Tokaido Shinkansen",
+      "Shin-Osaka to Namba"
+    ],
+    "schedule": [
+      [
+        "08:00",
+        "Check-out Tokyo",
+        "🧳"
+      ],
+      [
+        "10:00",
+        "Shinkansen",
+        "🚄"
+      ],
+      [
+        "13:00",
+        "Llegada Osaka",
+        "🌃"
+      ],
+      [
+        "15:00",
+        "Hotel Namba",
+        "🏨"
+      ],
+      [
+        "18:00",
+        "Dotonbori",
+        "🍢"
+      ]
+    ],
+    "priorities": [
+      "Equipaje",
+      "Asientos Shinkansen",
+      "Check-in",
+      "Glico photo"
+    ],
+    "food": [
+      "Ekiben",
+      "Takoyaki",
+      "Okonomiyaki"
+    ],
+    "notes": "El primer objetivo en Osaka es instalarse; Dotonbori va después."
+  },
+  {
+    "id": "day-07",
+    "day": 7,
+    "date": "21 OCT",
+    "weekday": "Miércoles",
+    "city": "Osaka",
+    "cityKey": "osaka",
+    "title": "Universal Birthday",
+    "subtitle": "Super Nintendo World",
+    "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1800&q=88",
+    "start": "06:15",
+    "end": "22:30",
+    "distance": "16 km",
+    "steps": "23,000",
+    "budgetYen": 28000,
+    "weatherCity": "osaka",
+    "status": "Birthday Mission",
+    "href": "activities/universal.html",
+    "transport": [
+      "JR Loop Line",
+      "Yumesaki Line",
+      "Universal City"
+    ],
+    "schedule": [
+      [
+        "06:15",
+        "Salir",
+        "🚆"
+      ],
+      [
+        "07:00",
+        "Llegar USJ",
+        "🎟"
+      ],
+      [
+        "08:00",
+        "Nintendo World",
+        "🍄"
+      ],
+      [
+        "13:00",
+        "Jurassic Park",
+        "🦖"
+      ],
+      [
+        "16:00",
+        "Harry Potter",
+        "🪄"
+      ],
+      [
+        "21:30",
+        "Cena cumpleaños",
+        "🎂"
+      ]
+    ],
+    "priorities": [
+      "Nintendo World",
+      "Mario Kart",
+      "Harry Potter",
+      "Cena"
+    ],
+    "food": [
+      "Kinopio's Café",
+      "Cena de cumpleaños Namba"
+    ],
+    "notes": "Día largo. Proteger la energía para la noche."
+  },
+  {
+    "id": "day-08",
+    "day": 8,
+    "date": "22 OCT",
+    "weekday": "Jueves",
+    "city": "Osaka",
+    "cityKey": "osaka",
+    "title": "Kaiyukan + Umeda",
+    "subtitle": "Acuario, Nintendo y skyline",
+    "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1800&q=88",
+    "start": "09:00",
+    "end": "21:00",
+    "distance": "9 km",
+    "steps": "14,000",
+    "budgetYen": 12000,
+    "weatherCity": "osaka",
+    "status": "Flexible Indoor",
+    "href": "activities/kaiyukan.html",
+    "transport": [
+      "Osaka Metro Chuo",
+      "Osakako",
+      "Metro to Umeda"
+    ],
+    "schedule": [
+      [
+        "09:00",
+        "Salir a Osaka Bay",
+        "🚇"
+      ],
+      [
+        "10:00",
+        "Kaiyukan",
+        "🐠"
+      ],
+      [
+        "13:30",
+        "Tempozan",
+        "🍜"
+      ],
+      [
+        "16:00",
+        "Umeda",
+        "🏙"
+      ],
+      [
+        "18:00",
+        "Nintendo Osaka",
+        "🎮"
+      ],
+      [
+        "19:30",
+        "Sky Building",
+        "🌇"
+      ]
+    ],
+    "priorities": [
+      "Tiburón ballena",
+      "Nintendo Osaka",
+      "Sunset Umeda"
+    ],
+    "food": [
+      "Tempozan Marketplace",
+      "Umeda dinner"
+    ],
+    "notes": "Excelente plan para lluvia."
+  },
+  {
+    "id": "day-09",
+    "day": 9,
+    "date": "23 OCT",
+    "weekday": "Viernes",
+    "city": "Kyoto",
+    "cityKey": "kyoto",
+    "title": "Higashiyama + Gion",
+    "subtitle": "El Kioto clásico",
+    "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1800&q=88",
+    "start": "06:30",
+    "end": "21:00",
+    "distance": "14 km",
+    "steps": "21,000",
+    "budgetYen": 11000,
+    "weatherCity": "kyoto",
+    "status": "Photo Day",
+    "href": "#higashiyama-premium",
+    "transport": [
+      "Train Osaka–Kyoto",
+      "Bus / taxi to Kiyomizu",
+      "Walk to Gion"
+    ],
+    "schedule": [
+      [
+        "06:30",
+        "Salir de Osaka",
+        "🚆"
+      ],
+      [
+        "08:00",
+        "Kiyomizu-dera",
+        "🏯"
+      ],
+      [
+        "10:00",
+        "Sannenzaka",
+        "🏮"
+      ],
+      [
+        "12:00",
+        "Yasaka Pagoda",
+        "📸"
+      ],
+      [
+        "16:00",
+        "Gion",
+        "👘"
+      ],
+      [
+        "19:00",
+        "Pontocho",
+        "🍜"
+      ]
+    ],
+    "priorities": [
+      "Kiyomizu temprano",
+      "Ninenzaka",
+      "Yasaka Pagoda",
+      "Gion"
+    ],
+    "food": [
+      "Café tradicional",
+      "Cena Pontocho"
+    ],
+    "notes": "La luz y las multitudes definen este día."
+  },
+  {
+    "id": "day-10",
+    "day": 10,
+    "date": "24 OCT",
+    "weekday": "Sábado",
+    "city": "Kyoto",
+    "cityKey": "kyoto",
+    "title": "Arashiyama",
+    "subtitle": "Bambú, templo y río",
+    "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1800&q=88",
+    "start": "06:30",
+    "end": "18:30",
+    "distance": "13 km",
+    "steps": "19,000",
+    "budgetYen": 10000,
+    "weatherCity": "kyoto",
+    "status": "Nature Day",
+    "href": "#arashiyama-premium",
+    "transport": [
+      "JR to Saga-Arashiyama",
+      "Walk route",
+      "Return to Osaka"
+    ],
+    "schedule": [
+      [
+        "06:30",
+        "Salir",
+        "🚆"
+      ],
+      [
+        "08:00",
+        "Bamboo Grove",
+        "🎋"
+      ],
+      [
+        "09:00",
+        "Tenryu-ji",
+        "🏯"
+      ],
+      [
+        "11:30",
+        "Togetsukyo",
+        "🌉"
+      ],
+      [
+        "13:00",
+        "Comida",
+        "🍜"
+      ],
+      [
+        "15:00",
+        "Monkey Park opcional",
+        "🐒"
+      ]
+    ],
+    "priorities": [
+      "Bambú temprano",
+      "Tenryu-ji",
+      "Río",
+      "Fotos"
+    ],
+    "food": [
+      "Soba / udon",
+      "Matcha snack"
+    ],
+    "notes": "Si están cansados, saltar Monkey Park."
+  },
+  {
+    "id": "day-11",
+    "day": 11,
+    "date": "25 OCT",
+    "weekday": "Domingo",
+    "city": "Flexible",
+    "cityKey": "transit",
+    "title": "Nara / Nintendo",
+    "subtitle": "Día flexible del Crew",
+    "image": "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?auto=format&fit=crop&w=1800&q=88",
+    "start": "08:00",
+    "end": "20:00",
+    "distance": "Variable",
+    "steps": "Variable",
+    "budgetYen": 12000,
+    "weatherCity": "osaka",
+    "status": "Decision Day",
+    "href": "#itinerario",
+    "transport": [
+      "Option A: Nara",
+      "Option B: Osaka shopping",
+      "Option C: Rest"
+    ],
+    "schedule": [
+      [
+        "08:00",
+        "Revisar clima y energía",
+        "🧠"
+      ],
+      [
+        "09:00",
+        "Elegir plan",
+        "✅"
+      ],
+      [
+        "10:00",
+        "Nara o shopping",
+        "🦌"
+      ],
+      [
+        "18:00",
+        "Regreso a Namba",
+        "🌃"
+      ]
+    ],
+    "priorities": [
+      "No sobrecargar",
+      "Completar compras",
+      "Descansar si hace falta"
+    ],
+    "food": [
+      "Depende de la opción"
+    ],
+    "notes": "La flexibilidad es parte del itinerario, no un error."
+  },
+  {
+    "id": "day-12",
+    "day": 12,
+    "date": "26 OCT",
+    "weekday": "Lunes",
+    "city": "Tokyo",
+    "cityKey": "tokyo",
+    "title": "Operation Midnight",
+    "subtitle": "Regreso a Tokio + JDM Night",
+    "image": "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1800&q=88",
+    "start": "08:00",
+    "end": "00:30",
+    "distance": "10 km",
+    "steps": "14,000",
+    "budgetYen": 28000,
+    "weatherCity": "tokyo",
+    "status": "Night Mission",
+    "href": "activities/jdm-night.html",
+    "transport": [
+      "Shinkansen Osaka–Tokyo",
+      "Hotel / luggage",
+      "JDM tour"
+    ],
+    "schedule": [
+      [
+        "08:00",
+        "Check-out Osaka",
+        "🧳"
+      ],
+      [
+        "10:00",
+        "Shinkansen",
+        "🚄"
+      ],
+      [
+        "14:00",
+        "Tokyo",
+        "🗼"
+      ],
+      [
+        "17:30",
+        "Cena temprana",
+        "🍜"
+      ],
+      [
+        "19:00",
+        "JDM Night",
+        "🚗"
+      ],
+      [
+        "00:00",
+        "Regreso",
+        "🏁"
+      ]
+    ],
+    "priorities": [
+      "Equipaje",
+      "Cena previa",
+      "Tour confirmado",
+      "Baterías"
+    ],
+    "food": [
+      "Ekiben",
+      "Cena antes del tour"
+    ],
+    "notes": "Daikoku PA nunca está garantizado."
+  },
+  {
+    "id": "day-13",
+    "day": 13,
+    "date": "27 OCT",
+    "weekday": "Martes",
+    "city": "Transit",
+    "cityKey": "transit",
+    "title": "Haneda → SLC",
+    "subtitle": "Cierre de JP26",
+    "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=88",
+    "start": "Mañana",
+    "end": "Viaje",
+    "distance": "Regreso",
+    "steps": "Aeropuertos",
+    "budgetYen": 8000,
+    "weatherCity": "tokyo",
+    "status": "Return",
+    "href": "#itinerario",
+    "transport": [
+      "Hotel to airport",
+      "Check-in",
+      "International flight"
+    ],
+    "schedule": [
+      [
+        "Mañana",
+        "Check-out",
+        "🏨"
+      ],
+      [
+        "-3 h",
+        "Llegar al aeropuerto",
+        "✈️"
+      ],
+      [
+        "Vuelo",
+        "Tokyo → SLC",
+        "🛫"
+      ],
+      [
+        "Casa",
+        "Fin de la misión",
+        "🏁"
+      ]
+    ],
+    "priorities": [
+      "Tax-free items",
+      "Pasaportes",
+      "Equipaje",
+      "Últimas compras"
+    ],
+    "food": [
+      "Aeropuerto / vuelo"
+    ],
+    "notes": "Guardar todos los recuerdos y notas del Crew."
+  }
+]

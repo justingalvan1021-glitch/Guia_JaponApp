@@ -47,3 +47,11 @@ Mission Control completo para las siete actividades principales. Consulta `docs/
 - Consejos de JP26 según lluvia, viento y temperatura.
 - Respaldo de los últimos datos mediante `localStorage`.
 - Actualización automática cada 15 minutos.
+
+## v4.4–v4.5
+
+- Conversión dinámica de yenes a dólares estadounidenses.
+- Tipo de cambio diario con respaldo local.
+- Itinerary OS completamente rediseñado.
+- Trece días con hero, timeline, presupuesto, transporte, prioridades y notas.
+- Progreso del itinerario conectado al Home.

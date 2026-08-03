@@ -1,82 +1,75 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#080b12">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<meta content="#080b12" name="theme-color"/>
 <title>JP26 Mission</title>
-<link rel="stylesheet" href="../css/missions.css">
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-</head>
+<link href="../css/missions.css" rel="stylesheet"/>
+<link href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet"/>
+<link href="../css/currency.css" rel="stylesheet"/></head>
 <body class="mission-body" data-activity="teamlab">
 <header class="mission-topbar">
-  <a class="mission-brand" href="../index.html#inicio">JP26</a>
-  <a class="mission-back" href="../index.html#misiones">← Actividades</a>
+<a class="mission-brand" href="../index.html#inicio">JP26</a>
+<a class="mission-back" href="../index.html#misiones">← Actividades</a>
 </header>
 <main class="mission-shell">
-  <section class="mission-hero" id="missionHero">
-    <div class="mission-hero-content">
-      <div class="mission-kicker" id="missionKicker">JP26 MISSION</div>
-      <h1 id="missionTitle">Cargando…</h1>
-      <p id="missionObjective"></p>
-      <div class="mission-tags" id="missionTags"></div>
-    </div>
-  </section>
-
-  <section class="mission-grid" id="missionMetrics"></section>
-
-  <section class="mission-section">
-    <div class="mission-section-head"><div><div class="mission-kicker">MISSION TIMELINE</div><h2>Estrategia del día</h2></div><p>Una secuencia clara para proteger las prioridades.</p></div>
-    <div class="mission-timeline" id="missionTimeline"></div>
-  </section>
-
-  <section class="mission-section">
-    <div class="mission-section-head"><div><div class="mission-kicker">PRIORITIES</div><h2>Qué hacer primero</h2></div></div>
-    <div class="priority-grid" id="missionPriorities"></div>
-  </section>
-
-  <section class="mission-section">
-    <div class="mission-section-head"><div><div class="mission-kicker">ROUTE</div><h2>Mapa de la misión</h2></div></div>
-    <div class="mission-map-layout">
-      <div class="mission-map" id="missionMap"></div>
-      <aside class="mission-route-panel">
-        <h3>Paradas</h3>
-        <div id="missionStops"></div>
-        <div class="mission-actions"><a class="mission-btn" id="missionRouteBtn" target="_blank" rel="noopener">Abrir ruta completa</a></div>
-      </aside>
-    </div>
-  </section>
-
-  <section class="mission-section mission-two-col">
-    <article class="mission-panel">
-      <h3>🎒 Checklist</h3>
-      <div class="mission-checklist" id="missionChecklist"></div>
-    </article>
-    <article class="mission-panel">
-      <h3>💴 Presupuesto</h3>
-      <div id="missionBudget"></div>
-    </article>
-  </section>
-
-  <section class="mission-section mission-panel">
-    <h3>💡 Crew Tips</h3>
-    <div class="tip-list" id="missionTips"></div>
-  </section>
-
-  <section class="mission-section mission-completion">
-    <label class="mission-complete-toggle"><input id="missionComplete" type="checkbox"> ✅ Misión completada</label>
-    <h3>Diario del Crew</h3>
-    <div class="mission-completion-grid">
-      <label>Mejor momento<input type="text" data-note="bestMoment"></label>
-      <label>Mejor comida<input type="text" data-note="bestFood"></label>
-      <label>Mejor foto<input type="text" data-note="bestPhoto"></label>
-      <label>Calificación<input type="text" data-note="rating" placeholder="10/10"></label>
-    </div>
-    <label>Momento del Crew<textarea rows="4" data-note="crewMoment"></textarea></label>
-  </section>
-
-  <footer class="mission-footer">JP26 v4.2 · Mission Control</footer>
+<section class="mission-hero" id="missionHero">
+<div class="mission-hero-content">
+<div class="mission-kicker" id="missionKicker">JP26 MISSION</div>
+<h1 id="missionTitle">Cargando…</h1>
+<p id="missionObjective"></p>
+<div class="mission-tags" id="missionTags"></div>
+</div>
+</section>
+<section class="mission-grid" id="missionMetrics"></section>
+<section class="mission-section">
+<div class="mission-section-head"><div><div class="mission-kicker">MISSION TIMELINE</div><h2>Estrategia del día</h2></div><p>Una secuencia clara para proteger las prioridades.</p></div>
+<div class="mission-timeline" id="missionTimeline"></div>
+</section>
+<section class="mission-section">
+<div class="mission-section-head"><div><div class="mission-kicker">PRIORITIES</div><h2>Qué hacer primero</h2></div></div>
+<div class="priority-grid" id="missionPriorities"></div>
+</section>
+<section class="mission-section">
+<div class="mission-section-head"><div><div class="mission-kicker">ROUTE</div><h2>Mapa de la misión</h2></div></div>
+<div class="mission-map-layout">
+<div class="mission-map" id="missionMap"></div>
+<aside class="mission-route-panel">
+<h3>Paradas</h3>
+<div id="missionStops"></div>
+<div class="mission-actions"><a class="mission-btn" id="missionRouteBtn" rel="noopener" target="_blank">Abrir ruta completa</a></div>
+</aside>
+</div>
+</section>
+<section class="mission-section mission-two-col">
+<article class="mission-panel">
+<h3>🎒 Checklist</h3>
+<div class="mission-checklist" id="missionChecklist"></div>
+</article>
+<article class="mission-panel">
+<h3>💴 Presupuesto</h3>
+<div id="missionBudget"></div>
+</article>
+</section>
+<section class="mission-section mission-panel">
+<h3>💡 Crew Tips</h3>
+<div class="tip-list" id="missionTips"></div>
+</section>
+<section class="mission-section mission-completion">
+<label class="mission-complete-toggle"><input id="missionComplete" type="checkbox"/> ✅ Misión completada</label>
+<h3>Diario del Crew</h3>
+<div class="mission-completion-grid">
+<label>Mejor momento<input data-note="bestMoment" type="text"/></label>
+<label>Mejor comida<input data-note="bestFood" type="text"/></label>
+<label>Mejor foto<input data-note="bestPhoto" type="text"/></label>
+<label>Calificación<input data-note="rating" placeholder="10/10" type="text"/></label>
+</div>
+<label>Momento del Crew<textarea data-note="crewMoment" rows="4"></textarea></label>
+</section>
+<footer class="mission-footer">JP26 v4.2 · Mission Control</footer>
 </main>
-<script src="../js/missions.js" defer></script>
+<script defer="True" src="../js/currency.js"></script><script defer="" src="../js/missions.js"></script>
 </body>
 </html>

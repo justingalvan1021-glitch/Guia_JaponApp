@@ -5,8 +5,8 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
 <meta content="#080b12" name="theme-color"/>
-<title>JP26 v4.3 — Live Weather &amp; World Clocks</title>
-<link crossorigin="" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" rel="stylesheet"/><link href="css/style.css" rel="stylesheet"/><link href="css/dashboard.css" rel="stylesheet"/><script crossorigin="" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><link href="manifest.json" rel="manifest"/><meta content="yes" name="apple-mobile-web-app-capable"/><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/><meta content="JP26" name="apple-mobile-web-app-title"/><link href="css/mission-hub.css" rel="stylesheet"/><link href="css/weather.css" rel="stylesheet"/></head>
+<title>JP26 v4.5 — Itinerary OS</title>
+<link crossorigin="" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" rel="stylesheet"/><link href="css/style.css" rel="stylesheet"/><link href="css/dashboard.css" rel="stylesheet"/><script crossorigin="" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><link href="manifest.json" rel="manifest"/><meta content="yes" name="apple-mobile-web-app-capable"/><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/><meta content="JP26" name="apple-mobile-web-app-title"/><link href="css/mission-hub.css" rel="stylesheet"/><link href="css/weather.css" rel="stylesheet"/><link href="css/currency.css" rel="stylesheet"/><link href="css/itinerary-os.css" rel="stylesheet"/></head>
 <body>
 <input class="menu-toggle" id="menu" type="checkbox"/>
 <label aria-label="Abrir menú" class="hamb" for="menu">☰</label>
@@ -312,187 +312,50 @@
 </div>
 </section>
 <section class="wrap app-section" id="itinerario">
-<div class="section-head"><div><div class="eyebrow">Day by day</div><h2>Itinerario detallado</h2></div><p>Horarios recomendados, tiempos de visita y trayectos integrados dentro de cada día. Los trenes exactos se confirmarán cerca del viaje.</p></div>
-<div class="notice">Los horarios son objetivos operativos, no reservaciones. Ghibli, teamLab, Shibuya Sky, DisneySea y Universal se ajustarán a la hora de entrada que logremos comprar.</div>
-<details class="day-detail"><summary>15 OCT · SLC → Seúl · Departure Day</summary><div class="detail-body"><div class="schedule">
-<div class="slot"><time>07:30</time><div><strong>Llegar a SLC</strong><span>Documentos, equipaje y check-in internacional.</span></div></div>
-<div class="slot"><time>10:55</time><div><strong>Salida desde Salt Lake City</strong><span>Guardar una muda, cargadores y documentos en equipaje de mano.</span></div></div>
-<div class="slot"><time>Vuelo</time><div><strong>Ajustar sueño a Japón</strong><span>Intentar dormir durante la parte nocturna del horario japonés.</span></div></div>
-</div></div></details>
-<details class="day-detail"><summary>16 OCT · Seúl → Narita → Oshiage</summary><div class="detail-body"><div class="schedule">
-<div class="slot"><time>15:20</time><div><strong>Llegada a Seúl</strong><span>Conexión internacional; seguir señalización de transfers.</span></div></div>
-<div class="slot"><time>18:35</time><div><strong>Vuelo a Tokio</strong><span>Tener listo Visit Japan Web y dirección del hotel.</span></div></div>
-<div class="slot"><time>21:05</time><div><strong>Llegada a Narita</strong><span>Migración, maletas y aduana: estimar 60–100 min.</span></div></div>
-<div class="slot"><time>22:30+</time><div><strong>Narita → Oshiage</strong><span>Ruta preferida: Keisei Access Express directo cuando el horario lo permita; respaldo: Skyliner + conexión o taxi.</span></div></div>
-<div class="slot"><time>00:00</time><div><strong>ONE@Tokyo</strong><span>Check-in, konbini y dormir. Nada más.</span></div></div>
-</div><div class="route-line"><div class="station"><div class="station-dot"></div><b>Narita Airport</b><small>Keisei</small></div><div class="rail"></div><div class="station"><div class="station-dot"></div><b>Oshiage</b><small>Skytree</small></div><div class="rail"></div><div class="station"><div class="station-dot"></div><b>ONE@Tokyo</b><small>3 min caminando</small></div></div></div></details>
-<details class="day-detail" open="">
-<summary>17 OCT · Old Tokyo + Skytree + Akihabara · Premium Day Plan</summary>
-<div class="detail-body">
-<div class="day-dashboard">
-<div class="metric"><small>Inicio recomendado</small><strong>07:30</strong></div>
-<div class="metric"><small>Caminata estimada</small><strong>12–15 km</strong></div>
-<div class="metric"><small>Ritmo</small><strong><em>Medio–alto</em></strong></div>
-<div class="metric"><small>Presupuesto base</small><strong>¥5,000–9,000</strong></div>
-</div>
-<div class="notice"><strong>Misión del día:</strong> combinar el Tokio tradicional, una vista panorámica y el lado friki sin cruzar la ciudad innecesariamente. Cámara recomendada: 24–70 mm; lleva una batería extra.</div>
-<div class="day-section">
-<h4><span>01.</span> Timeline</h4>
-<div class="schedule">
-<div class="slot"><time>07:30</time><div><strong>Desayuno ligero cerca del hotel</strong><span>Onigiri, café y agua. Eviten una comida pesada para salir rápido.</span></div></div>
-<div class="slot"><time>08:00</time><div><strong>ONE@Tokyo → Asakusa</strong><span>Caminar a Oshiage Station y tomar la Toei Asakusa Line. Traslado aproximado: 15–20 min incluyendo caminata.</span></div></div>
-<div class="slot"><time>08:25</time><div><strong>Kaminarimon</strong><span>Fotos antes de que Nakamise se llene. Tiempo sugerido: 20–30 min.</span></div></div>
-<div class="slot"><time>09:00</time><div><strong>Senso-ji</strong><span>Patio principal, pagoda y omikuji. Tiempo sugerido: 60–75 min.</span></div></div>
-<div class="slot"><time>10:15</time><div><strong>Nakamise + snack</strong><span>Melon pan, ningyo-yaki o senbei. No comprar todos los souvenirs aquí; comparar después.</span></div></div>
-<div class="slot"><time>11:15</time><div><strong>Río Sumida → Tokyo Skytree</strong><span>Caminata escénica de 20–30 min. Buen ángulo desde el lado del río.</span></div></div>
-<div class="slot"><time>12:00</time><div><strong>Tokyo Skytree / Solamachi</strong><span>Mirador opcional; si prefieren ahorrar tiempo, recorrer Solamachi y comer aquí.</span></div></div>
-<div class="slot"><time>13:30</time><div><strong>Lunch</strong><span>Elegir una de las opciones de abajo. Reservar 60–75 min.</span></div></div>
-<div class="slot"><time>15:00</time><div><strong>Traslado a Akihabara</strong><span>Oshiage → Asakusabashi por Toei Asakusa; conexión JR Chuo-Sobu Local → Akihabara.</span></div></div>
-<div class="slot"><time>15:30</time><div><strong>Akihabara: tiendas y arcades</strong><span>Radio Kaikan, Mandarake, gachapon, GiGO y tiendas de figuras. Priorizar 3–4 lugares.</span></div></div>
-<div class="slot"><time>18:30</time><div><strong>Blue hour + neones</strong><span>Sesión de fotografía callejera. 35 mm o 50 mm si quieren escenas más cerradas.</span></div></div>
-<div class="slot"><time>20:00</time><div><strong>Cena</strong><span>Ramen, gyukatsu o sushi casual según energía y filas.</span></div></div>
-<div class="slot"><time>21:30</time><div><strong>Regreso a Oshiage</strong><span>Akihabara → Asakusabashi en JR; Toei Asakusa Line → Oshiage.</span></div></div>
+<div class="ios-page">
+<header class="ios-hero">
+<div class="ios-hero-content">
+<div class="eyebrow">JP26 ITINERARY OS</div>
+<h2>THE JOURNEY<br/><span>DAY BY DAY</span></h2>
+<p>Trece días conectados con horarios, transporte, presupuesto, clima, mapas y prioridades.</p>
+<div class="ios-hero-stats">
+<span><b>13</b><small>Días</small></span>
+<span><b>3</b><small>Ciudades</small></span>
+<span><b>7</b><small>Misiones</small></span>
+<span><b id="ios-total-budget-yen">¥--</b><small>Presupuesto base</small></span>
 </div>
 </div>
-<div class="route-inline">
-<strong>🚇 Ruta integrada del día</strong>
-<div class="route-steps">
-<span class="route-step">ONE@Tokyo</span><span class="route-arrow">→</span>
-<span class="route-step">Oshiage A20</span><span class="route-arrow">→</span>
-<span class="route-step">Asakusa A18</span><span class="route-arrow">→</span>
-<span class="route-step">Skytree a pie</span><span class="route-arrow">→</span>
-<span class="route-step">Oshiage</span><span class="route-arrow">→</span>
-<span class="route-step">Asakusabashi</span><span class="route-arrow">→</span>
-<span class="route-step">Akihabara</span>
+</header>
+<div class="ios-shell">
+<section class="ios-control-panel">
+<div class="ios-month-nav">
+<div>
+<small>OCTOBER 2026</small>
+<h3>Selecciona un día</h3>
 </div>
-<div class="btn-row"><a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=ONE%40Tokyo&amp;destination=Akihabara+Station&amp;waypoints=Senso-ji%7CTokyo+Skytree" rel="noopener" target="_blank">Abrir ruta del día</a></div>
-</div>
-<div class="day-section">
-<h4><span>02.</span> Comida por zona</h4>
-<div class="compact-grid">
-<div class="micro-card"><h5>🍜 Ramen en Asakusa</h5><p>Ideal si quieren comer antes de Skytree. Buscar una opción con fila moderada y pedir ramen clásico + huevo.</p><div class="btn-row"><a class="btn secondary" href="https://www.google.com/maps/search/ramen+Asakusa+Tokyo" rel="noopener" target="_blank">Ver opciones</a></div></div>
-<div class="micro-card"><h5>🍣 Solamachi / Skytree</h5><p>La opción más práctica. Mucha variedad bajo techo y buena para descansar antes de Akihabara.</p><div class="btn-row"><a class="btn secondary" href="https://www.google.com/maps/search/restaurants+Tokyo+Solamachi" rel="noopener" target="_blank">Ver opciones</a></div></div>
-<div class="micro-card"><h5>🥩 Cena en Akihabara</h5><p>Gyukatsu, curry o sushi casual. Evitar sacrificar una hora en una fila viral si todavía quieren explorar.</p><div class="btn-row"><a class="btn secondary" href="https://www.google.com/maps/search/dinner+Akihabara+Tokyo" rel="noopener" target="_blank">Ver opciones</a></div></div>
+<div class="ios-city-legend">
+<span class="tokyo">Tokyo</span>
+<span class="osaka">Osaka</span>
+<span class="kyoto">Kyoto</span>
+<span class="transit">Transit</span>
 </div>
 </div>
-<div class="day-section">
-<h4><span>03.</span> Photographer Mode</h4>
-<div class="compact-grid">
-<div class="micro-card"><h5>📸 Kaminarimon</h5><p><strong>Hora:</strong> 08:15–08:45<br/><strong>Lente:</strong> 24–35 mm<br/><strong>Tip:</strong> encuadre bajo para incluir la linterna y la puerta.</p></div>
-<div class="micro-card"><h5>📸 Skytree desde Sumida</h5><p><strong>Hora:</strong> 11:00–12:00<br/><strong>Lente:</strong> 24–70 mm<br/><strong>Tip:</strong> usar líneas del puente o reflejos del río.</p></div>
-<div class="micro-card"><h5>📸 Akihabara</h5><p><strong>Hora:</strong> 18:00–19:30<br/><strong>Lente:</strong> 35 o 50 mm<br/><strong>Tip:</strong> medir luces altas para conservar los neones.</p></div>
+<div class="ios-date-strip" id="ios-date-strip"></div>
+</section>
+<section class="ios-day-view" id="ios-day-view">
+<div class="ios-loading">Cargando itinerario…</div>
+</section>
+<section class="ios-trip-summary">
+<div class="ios-summary-head">
+<div>
+<div class="eyebrow">TRIP SUMMARY</div>
+<h3>Vista completa del viaje</h3>
 </div>
 </div>
-<div class="day-section">
-<h4><span>04.</span> Compras + friki</h4>
-<div class="compact-grid">
-<div class="micro-card"><h5>Radio Kaikan</h5><p>Figuras, cartas y coleccionables. Buen punto de inicio porque está frente a la estación.</p></div>
-<div class="micro-card"><h5>Mandarake Complex</h5><p>Productos usados y rarezas. Huerta debe entrar con presupuesto definido 😂.</p></div>
-<div class="micro-card"><h5>GiGO / gachapon</h5><p>Arcades y cápsulas. Elegir una sola sucursal grande para no repetir la misma experiencia.</p></div>
+<div class="ios-summary-grid" id="ios-summary-grid"></div>
+</section>
 </div>
 </div>
-<div class="day-section">
-<h4><span>05.</span> Worth it?</h4>
-<div class="card card-pad">
-<div class="rating-row"><span>Senso-ji temprano</span><strong>★★★★★ · Sí o sí</strong></div>
-<div class="rating-row"><span>Subir a Skytree</span><strong>★★★★☆ · Opcional</strong></div>
-<div class="rating-row"><span>Nakamise souvenirs</span><strong>★★★☆☆ · Comparar precios</strong></div>
-<div class="rating-row"><span>Akihabara de noche</span><strong>★★★★★ · Perfecto para ustedes</strong></div>
-</div>
-</div>
-<div class="day-section">
-<h4><span>06.</span> Plan B + tips</h4>
-<div class="tip-list">
-<div class="tip-item"><strong>Si llueve:</strong> reducir la caminata del río, usar tren Oshiage ↔ Asakusa y dedicar más tiempo a Solamachi y Akihabara.</div>
-<div class="tip-item"><strong>Si están cansados:</strong> saltarse el mirador de Skytree y descansar/comer en Solamachi.</div>
-<div class="tip-item"><strong>Si terminan temprano:</strong> agregar Kanda Myojin, a unos minutos de Akihabara.</div>
-<div class="tip-item"><strong>Compra inteligente:</strong> tomar fotos de precios antes de comprar figuras; algunas tiendas cambian mucho de precio.</div>
-</div>
-</div>
-<div class="day-section">
-<h4><span>07.</span> Memory Log</h4>
-<div class="journal-box">
-<strong>Lo mejor del día fue...</strong><div class="journal-line"></div>
-<strong>La mejor comida fue...</strong><div class="journal-line"></div>
-<strong>La foto favorita fue...</strong><div class="journal-line"></div>
-</div>
-</div>
-</div>
-</details>
-<details class="day-detail" open=""><summary>18 OCT · Tokyo DisneySea · Día completo</summary><div class="detail-body"><div class="schedule">
-<div class="slot"><time>05:45</time><div><strong>Levantarse</strong><span>Desayuno comprado la noche anterior.</span></div></div>
-<div class="slot"><time>06:30</time><div><strong>Oshiage → Maihama</strong><span>Hanzomon a Tokyo/Otemachi + caminata/transfer a JR Keiyo; confirmar ruta en Maps ese día.</span></div></div>
-<div class="slot"><time>07:30</time><div><strong>Llegar al resort</strong><span>JR Maihama → Resort Gateway → Disney Resort Line → Tokyo DisneySea Station.</span></div></div>
-<div class="slot"><time>Apertura</time><div><strong>Entrar y abrir la app</strong><span>Resolver accesos/pases primero; luego Fantasy Springs o la prioridad vigente.</span></div></div>
-<div class="slot"><time>12:00</time><div><strong>Comida temprana</strong><span>Evitar el pico de 13:00–14:00.</span></div></div>
-<div class="slot"><time>Todo el día</time><div><strong>Misiones</strong><span>Journey, Soaring, Indiana Jones, Tower of Terror y espectáculo nocturno según operación.</span></div></div>
-<div class="slot"><time>Cierre</time><div><strong>Regreso a Oshiage</strong><span>Disney Resort Line → Maihama → JR Keiyo → conexión a Oshiage.</span></div></div>
-</div><div class="route-line"><div class="station"><div class="station-dot"></div><b>Oshiage</b><small>hotel</small></div><div class="rail"></div><div class="station"><div class="station-dot"></div><b>Tokyo</b><small>JR Keiyo</small></div><div class="rail"></div><div class="station"><div class="station-dot"></div><b>Maihama</b><small>JE07</small></div><div class="rail"></div><div class="station"><div class="station-dot"></div><b>DisneySea</b><small>monorail</small></div></div></div></details>
-<details class="day-detail"><summary>19 OCT · Ghibli + teamLab + Shibuya Sky</summary><div class="detail-body"><div class="notice">Es el día más exigente. Funciona mejor con Ghibli a primera hora, teamLab a media tarde y Shibuya Sky 45–60 min antes del atardecer.</div><div class="schedule">
-<div class="slot"><time>07:00</time><div><strong>Oshiage → Mitaka</strong><span>Hanzomon a Otemachi; Tokyo Metro/JR hasta Shinjuku; JR Chuo a Mitaka.</span></div></div>
-<div class="slot"><time>09:30</time><div><strong>Mitaka → Ghibli Museum</strong><span>Bus comunitario o caminata de 15 min.</span></div></div>
-<div class="slot"><time>10:00</time><div><strong>Ghibli Museum</strong><span>2–2.5 h. Entrada únicamente con reserva.</span></div></div>
-<div class="slot"><time>12:30</time><div><strong>Traslado y comida</strong><span>Mitaka → Shinjuku/Tokyo → Toyosu.</span></div></div>
-<div class="slot"><time>15:00</time><div><strong>teamLab Planets</strong><span>2–3 h; Shin-Toyosu Station está a 1 min.</span></div></div>
-<div class="slot"><time>17:30</time><div><strong>Shin-Toyosu → Shibuya</strong><span>Yurikamome a Shimbashi + Tokyo Metro Ginza a Shibuya.</span></div></div>
-<div class="slot"><time>Sunset</time><div><strong>Shibuya Sky</strong><span>Reserva ajustada al atardecer; Nintendo Tokyo y Pokémon Center antes o después según horario.</span></div></div>
-<div class="slot"><time>21:30</time><div><strong>Cena / nightlife opcional</strong><span>Sin pasarse: checkout y Shinkansen al día siguiente.</span></div></div>
-</div></div></details>
-<details class="day-detail"><summary>20 OCT · Check-out Tokio → Osaka → Dotonbori</summary><div class="detail-body"><div class="schedule">
-<div class="slot"><time>08:30</time><div><strong>Empacar y desayunar</strong><span>Revisar que nada quede en el hotel.</span></div></div>
-<div class="slot"><time>11:00</time><div><strong>Check-out ONE@Tokyo</strong><span>Oshiage → Shinagawa o Tokyo Station.</span></div></div>
-<div class="slot"><time>12:30</time><div><strong>Shinkansen a Shin-Osaka</strong><span>Nozomi reservado mediante SmartEX; meta 2.5 h aprox.</span></div></div>
-<div class="slot"><time>15:30</time><div><strong>Shin-Osaka → hotel</strong><span>Base provisional: Namba, con base confirmada en APA Hotel &amp; Resort Osaka Namba Ekimae Tower. Midosuji Line directa.</span></div></div>
-<div class="slot"><time>18:00</time><div><strong>Dotonbori + Hozenji</strong><span>Glico, paseo, takoyaki y okonomiyaki.</span></div></div>
-<div class="slot"><time>22:00</time><div><strong>Noche ligera</strong><span>Universal empieza temprano al día siguiente.</span></div></div>
-</div><div class="route-line"><div class="station"><div class="station-dot"></div><b>Oshiage</b><small>Tokyo</small></div><div class="rail"></div><div class="station"><div class="station-dot"></div><b>Shinagawa</b><small>Shinkansen</small></div><div class="rail"></div><div class="station"><div class="station-dot"></div><b>Shin-Osaka</b><small>Midosuji</small></div><div class="rail"></div><div class="station"><div class="station-dot"></div><b>Namba</b><small>APA Namba Ekimae Tower</small></div></div></div></details>
-<details class="day-detail"><summary>21 OCT · Cumpleaños en Universal Studios Japan</summary><div class="detail-body"><div class="schedule">
-<div class="slot"><time>05:45</time><div><strong>Despertar + desayuno</strong><span>Birthday mission.</span></div></div>
-<div class="slot"><time>06:30</time><div><strong>Namba → Universal City</strong><span>Hanshin/Namba Line o metro/JR según hotel; conexión habitual en Nishikujo a JR Yumesaki Line.</span></div></div>
-<div class="slot"><time>07:30</time><div><strong>Llegar antes de apertura</strong><span>Revisar app, Express Pass y Timed Entry.</span></div></div>
-<div class="slot"><time>Todo el día</time><div><strong>Super Nintendo World + Harry Potter</strong><span>Mario Kart, Donkey Kong y prioridades del grupo.</span></div></div>
-<div class="slot"><time>20:30</time><div><strong>Cena de cumpleaños</strong><span>Yakiniku o restaurante especial en Namba/Shinsaibashi.</span></div></div>
-<div class="slot"><time>22:30</time><div><strong>Karaoke opcional</strong><span>Solo si todavía hay batería humana.</span></div></div>
-</div></div></details>
-<details class="day-detail"><summary>22 OCT · Kaiyukan + Tempozan + Umeda</summary><div class="detail-body"><div class="schedule">
-<div class="slot"><time>09:00</time><div><strong>Namba → Osakako</strong><span>Midosuji a Hommachi; transfer a Osaka Metro Chuo Line.</span></div></div>
-<div class="slot"><time>10:00</time><div><strong>Kaiyukan</strong><span>2.5–3.5 h; 5 min caminando desde Exit 1 de Osakako.</span></div></div>
-<div class="slot"><time>13:30</time><div><strong>Tempozan</strong><span>Comida y rueda de la fortuna opcional.</span></div></div>
-<div class="slot"><time>16:00</time><div><strong>Osakako → Umeda</strong><span>Chuo a Hommachi; Midosuji a Umeda.</span></div></div>
-<div class="slot"><time>17:00</time><div><strong>Umeda</strong><span>Nintendo Osaka, Pokémon Center y mirador al atardecer.</span></div></div>
-<div class="slot"><time>21:00</time><div><strong>Nightlife</strong><span>Shinsaibashi/Namba o noche latina.</span></div></div>
-</div></div></details>
-<details class="day-detail"><summary>23 OCT · Kioto Este · Día principal de fotografía</summary><div class="detail-body"><div class="schedule">
-<div class="slot"><time>05:45</time><div><strong>Osaka → Fushimi Inari</strong><span>Desde Osaka/Umeda: JR Kyoto Line a Kyoto; JR Nara Line a Inari. Desde Namba puede convenir Keihan vía Yodoyabashi.</span></div></div>
-<div class="slot"><time>07:00</time><div><strong>Fushimi Inari</strong><span>2–3 h. Subir más allá del primer tramo de torii.</span></div></div>
-<div class="slot"><time>10:00</time><div><strong>Fushimi → Kiyomizu-Gojo</strong><span>Keihan Line; luego caminata o bus.</span></div></div>
-<div class="slot"><time>11:00</time><div><strong>Kiyomizu-dera</strong><span>Sannenzaka, Ninenzaka y Yasaka Pagoda.</span></div></div>
-<div class="slot"><time>15:30</time><div><strong>Gion</strong><span>Fotografía responsable; no entrar a calles privadas.</span></div></div>
-<div class="slot"><time>18:00</time><div><strong>Pontocho</strong><span>Blue hour, cena y regreso a Osaka.</span></div></div>
-</div></div></details>
-<details class="day-detail"><summary>24 OCT · Kioto Oeste · Arashiyama + Kinkaku-ji</summary><div class="detail-body"><div class="schedule">
-<div class="slot"><time>06:00</time><div><strong>Osaka → Arashiyama</strong><span>Hankyu desde Osaka-Umeda vía Katsura o JR vía Kyoto/Saga-Arashiyama.</span></div></div>
-<div class="slot"><time>07:30</time><div><strong>Bamboo Grove</strong><span>Temprano para fotografía; Tenryu-ji y Togetsukyo.</span></div></div>
-<div class="slot"><time>11:30</time><div><strong>Arashiyama → Kinkaku-ji</strong><span>Randen + bus/taxi; este es el traslado menos directo del día.</span></div></div>
-<div class="slot"><time>13:00</time><div><strong>Kinkaku-ji</strong><span>60–90 min.</span></div></div>
-<div class="slot"><time>15:30</time><div><strong>Nishiki Market</strong><span>Comida tardía, compras y centro de Kioto.</span></div></div>
-<div class="slot"><time>19:00</time><div><strong>Regreso a Osaka</strong><span>Hankyu Kawaramachi → Osaka-Umeda o JR Kyoto → Osaka.</span></div></div>
-</div></div></details>
-<details class="day-detail"><summary>25 OCT · Día flexible</summary><div class="detail-body"><div class="grid g3"><div class="card card-pad"><h3>🦌 Nara</h3><p>Kintetsu Nara desde Osaka-Namba; parque, Todai-ji y regreso por la tarde.</p></div><div class="card card-pad"><h3>🎮 Nintendo Museum</h3><p>Solo con boleto. Desde Kyoto Station hacia Ogura/Shin-Tanabe según ruta vigente.</p></div><div class="card card-pad"><h3>🛍 Osaka libre</h3><p>Compras, cafés, recuperación, antro latino o repetir comida favorita.</p></div></div></div></details>
-<details class="day-detail"><summary>26 OCT · Osaka → Tokio + Operation Midnight</summary><div class="detail-body"><div class="schedule">
-<div class="slot"><time>08:00</time><div><strong>Check-out Osaka</strong><span>Shin-Osaka vía Midosuji.</span></div></div>
-<div class="slot"><time>09:30</time><div><strong>Shinkansen a Shinagawa</strong><span>Elegir Shinagawa por acceso práctico a Haneda.</span></div></div>
-<div class="slot"><time>12:30</time><div><strong>Dejar equipaje</strong><span>Hotel cerca de Shinagawa/Haneda.</span></div></div>
-<div class="slot"><time>14:00</time><div><strong>Tarde libre</strong><span>Últimas compras o descanso.</span></div></div>
-<div class="slot"><time>18:00</time><div><strong>Tour JDM</strong><span>Recogida del operador; posibles paradas: Tokyo Tower, Rainbow Bridge y Daikoku PA.</span></div></div>
-<div class="slot"><time>23:00</time><div><strong>Regreso al hotel</strong><span>No depender del último tren; usar el retorno del tour.</span></div></div>
-</div></div></details>
-<details class="day-detail"><summary>27 OCT · Haneda → SLC</summary><div class="detail-body"><div class="schedule">
-<div class="slot"><time>09:00</time><div><strong>Desayuno y cierre de maletas</strong><span>Revisar compras tax-free y líquidos.</span></div></div>
-<div class="slot"><time>12:30</time><div><strong>Traslado a Haneda</strong><span>Keikyu desde Shinagawa o traslado del hotel.</span></div></div>
-<div class="slot"><time>13:30</time><div><strong>Llegar al aeropuerto</strong><span>3 h 20 min antes del vuelo.</span></div></div>
-<div class="slot"><time>16:50</time><div><strong>Vuelo de regreso</strong><span>Hasta la próxima misión.</span></div></div>
-</div></div></details>
 </section>
 <section class="wrap app-section" id="tokio">
 <div class="section-head">
@@ -4157,4 +4020,4 @@
 </section>
 <footer class="footer">JP26 1.0 · Stable CSS Navigation Build · Justin, Huerta &amp; Aram · October 2026<br/><small>Sin imágenes externas. Las rutas quedan integradas dentro de cada día; los eventos se actualizarán antes del viaje.</small></footer>
 </main>
-<script defer="True" src="js/app.js"></script><script defer="True" src="js/japanese.js"></script><script defer="True" src="js/maps.js"></script><script defer="True" src="js/dashboard.js"></script><script defer="True" src="js/weather.js"></script></body></html>
+<script defer="True" src="js/app.js"></script><script defer="True" src="js/japanese.js"></script><script defer="True" src="js/maps.js"></script><script defer="True" src="js/dashboard.js"></script><script defer="True" src="js/weather.js"></script><script defer="True" src="js/currency.js"></script><script defer="True" src="js/itinerary-os.js"></script></body></html>

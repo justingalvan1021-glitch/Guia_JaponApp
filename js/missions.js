@@ -36,7 +36,8 @@ function render(data){
   qs('missionChecklist').innerHTML=data.checklist.map((x,i)=>`
     <label class="mission-check"><input type="checkbox" data-check="${data.id}:${i}"><span>${escapeHtml(x)}</span></label>`).join('');
 
-  qs('missionBudget').innerHTML=data.budgetBreakdown.map(x=>`<div class="budget-row"><span>${escapeHtml(x[0])}</span><b>${escapeHtml(x[1])}</b></div>`).join('');
+  qs('missionBudget').innerHTML=data.budgetBreakdown.map(x=>{const amount=Number(String(x[1]).replace(/[^0-9]/g,''));return `<div class="budget-row"><span>${escapeHtml(x[0])}</span><b ${amount?'data-yen="'+amount+'"':''}>${escapeHtml(x[1])}</b></div>`}).join('');
+  if(window.JP26Currency) window.JP26Currency.applyConversions(qs('missionBudget'));
   qs('missionTips').innerHTML=data.tips.map(x=>`<div class="mission-tip">${escapeHtml(x)}</div>`).join('');
 
   qs('missionStops').innerHTML=data.stops.map((s,i)=>{

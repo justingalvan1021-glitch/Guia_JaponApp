@@ -139,3 +139,52 @@ La aplicación pide estas variables:
 - Día o noche.
 
 La interfaz se actualiza cada segundo para los relojes y cada 15 minutos para el clima.
+
+## 10. Conversión JPY → USD — v4.4
+
+El archivo `js/currency.js` consulta el tipo de cambio diario JPY/USD desde Frankfurter.
+
+La tasa se guarda en:
+
+```text
+jp26:fx:jpy-usd
+```
+
+Cuando la API no está disponible, la app usa la última tasa guardada. Si nunca hubo una consulta exitosa, usa una tasa de respaldo.
+
+El módulo busca elementos con precios en yenes o con el atributo:
+
+```html
+data-yen="12000"
+```
+
+y agrega el equivalente en dólares automáticamente.
+
+## 11. Itinerary OS — v4.5
+
+El itinerario completo vive en:
+
+```text
+data/itinerary-os.json
+```
+
+Cada día contiene:
+
+- Título.
+- Ciudad.
+- Horarios.
+- Transporte.
+- Presupuesto.
+- Actividades.
+- Comida.
+- Estado.
+- Imagen.
+- Enlace a la guía relacionada.
+
+`js/itinerary-os.js` genera la navegación por fechas, el día seleccionado y el resumen completo.
+
+El estado de cada día se guarda en `localStorage`:
+
+```text
+jp26:itinerary-complete:day-03
+```

@@ -66,3 +66,11 @@ Mission Control completo para las siete actividades principales. Consulta `docs/
 - Actividades y presupuestos muestran JPY, USD y MXN.
 - Survival Guide dividido en vistas independientes mediante rutas hash.
 - Continúa siendo una aplicación estática compatible con GitHub Pages.
+
+## v4.6 — Sprint 2
+
+- Overviews independientes para Tokyo, Osaka y Kyoto.
+- Catorce guías modulares generadas desde `data/cities.json`.
+- Componentes compartidos para hero, mapas, Photo Spots, Food, Budget, Japanese, Tips y Quick Actions.
+- Navegación principal conectada a los nuevos ecosistemas de ciudad.
+- Las guías heredadas permanecen disponibles durante la migración para conservar todo el contenido existente.

@@ -1,0 +1,47 @@
+{
+  "tokyo": {
+    "name": "Tokyo", "eyebrow": "TOKYO ECOSYSTEM", "description": "Neón, templos, cultura, compras y fotografía conectados por barrios.",
+    "places": [
+      {"id":"asakusa","name":"Asakusa","icon":"🏮","description":"Templos, Nakamise y el Tokio tradicional.","time":"Half day","image":"https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=1600&q=86"},
+      {"id":"akihabara","name":"Akihabara","icon":"🎮","description":"Arcades, figuras, electrónica y neones.","time":"3–5 hours","image":"https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1600&q=86"},
+      {"id":"shibuya","name":"Shibuya","icon":"🌆","description":"Crossing, skyline, Nintendo, Pokémon y moda.","time":"Half day","image":"https://images.unsplash.com/photo-1549693578-d683be217e58?auto=format&fit=crop&w=1600&q=86"},
+      {"id":"ueno","name":"Ueno","icon":"🌳","description":"Parque, museos, mercado y una pausa entre barrios.","time":"3–4 hours","image":"https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=1600&q=86"},
+      {"id":"odaiba","name":"Odaiba","icon":"🌈","description":"Bahía, teamLab, Gundam y arquitectura moderna.","time":"Half day","image":"https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1600&q=86"},
+      {"id":"skytree","name":"Skytree","icon":"🗼","description":"Oshiage, Solamachi y vistas sobre Tokio.","time":"2–4 hours","image":"https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1600&q=86"}
+    ]
+  },
+  "osaka": {
+    "name": "Osaka", "eyebrow": "OSAKA ECOSYSTEM", "description": "Comida, entretenimiento, bahía y noches de neón desde Namba.",
+    "places": [
+      {"id":"namba","name":"Namba","icon":"🌃","description":"Base Camp, estaciones, comida y regreso caminando.","time":"Half day","image":"https://images.unsplash.com/photo-1590559899731-a382839e5549?auto=format&fit=crop&w=1600&q=86"},
+      {"id":"dotonbori","name":"Dotonbori","icon":"🌉","description":"Glico, neones, comida callejera y fotos nocturnas.","time":"2–4 hours","image":"https://images.unsplash.com/photo-1590559899731-a382839e5549?auto=format&fit=crop&w=1600&q=86"},
+      {"id":"kaiyukan","name":"Kaiyukan","icon":"🐠","description":"Acuario, Tempozan y rueda de la fortuna.","time":"3–5 hours","image":"https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1600&q=86"},
+      {"id":"usj","name":"USJ","icon":"🎢","description":"Universal Studios y Super Nintendo World.","time":"Full day","image":"https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1600&q=86"}
+    ]
+  },
+  "kyoto": {
+    "name": "Kyoto", "eyebrow": "KYOTO ECOSYSTEM", "description": "Templos, senderos, calles históricas y fotografía responsable.",
+    "places": [
+      {"id":"higashiyama","name":"Higashiyama","icon":"🍁","description":"Kiyomizu-dera, calles históricas y pagodas.","time":"Half day","image":"https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1600&q=86"},
+      {"id":"arashiyama","name":"Arashiyama","icon":"🎋","description":"Bosque de bambú, río, templo y naturaleza.","time":"Half day","image":"https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1600&q=86"},
+      {"id":"fushimi","name":"Fushimi Inari","icon":"⛩","description":"Toriis, sendero y fotografía de amanecer.","time":"3–5 hours","image":"https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?auto=format&fit=crop&w=1600&q=86"},
+      {"id":"gion","name":"Gion","icon":"🏮","description":"Calles tradicionales, Pontocho y paseo nocturno.","time":"3–4 hours","image":"https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1600&q=86"}
+    ]
+  },
+  "details": {
+    "asakusa":{"city":"tokyo","mapId":"jp26-map-asakusa","photo":["Kaminarimon temprano","Encuadre frontal antes de las 8:00 AM","La luz suave conserva la atmósfera"],"food":["Asakusa Imahan","Sukiyaki","¥¥¥","Confirmar","JP26 Pick"],"budget":"¥3,000–¥8,000","japanese":["Sumimasen — Disculpe","Arigatō gozaimasu — Muchas gracias"],"tips":["Llegar temprano","Continuar a Oshiage a pie"]},
+    "akihabara":{"city":"tokyo","mapId":"jp26-map-akihabara","photo":["Akihabara Neon","Neones desde la acera opuesta","Blue hour y noche"],"food":["Ramen local","Ramen","¥¥","Confirmar","Nearby"],"budget":"¥3,000–¥10,000","japanese":["Kore wa ikura desu ka — ¿Cuánto cuesta?","Mite mo ii desu ka — ¿Puedo verlo?"],"tips":["Comparar precios","Cerrar en Kanda Myojin"]},
+    "shibuya":{"city":"tokyo","mapId":"jp26-map-shibuya","photo":["Shibuya Sky","Reservar golden hour","Llegar antes del horario"],"food":["Uobei Shibuya","Sushi","¥¥","Confirmar","JP26 Pick"],"budget":"¥4,000–¥10,000","japanese":["Yoyaku ga arimasu — Tengo reservación","Shashin wa daijōbu desu ka — ¿Se permiten fotos?"],"tips":["Proteger la reserva","Agrupar PARCO y Center-gai"]},
+    "ueno":{"city":"tokyo","mapId":"","photo":["Ueno Park","Senderos y arquitectura","Mañana"],"food":["Ameyoko","Street food","¥","Confirmar","Area Pick"],"budget":"¥2,000–¥6,000","japanese":["Koko wa doko desu ka — ¿Dónde está esto?"],"tips":["Mantener ritmo flexible","Combinar con Ameyoko"]},
+    "odaiba":{"city":"tokyo","mapId":"jp26-map-odaiba","photo":["Odaiba Bay","Reflejos de la bahía","Blue hour"],"food":["Toyosu Market","Sushi / seafood","¥¥–¥¥¥","Confirmar","Area Pick"],"budget":"¥5,000–¥12,000","japanese":["Nanji made desu ka — ¿Hasta qué hora?"],"tips":["Buen plan para lluvia","Usar Yurikamome"]},
+    "skytree":{"city":"tokyo","mapId":"jp26-map-asakusa","photo":["Tokyo Skytree","Incluir Sumida River en el encuadre","Sunset y noche"],"food":["Solamachi","Food hall","¥¥","Confirmar","Convenient"],"budget":"¥3,000–¥8,000","japanese":["Tenbōdai wa doko desu ka — ¿Dónde está el mirador?"],"tips":["Revisar visibilidad","Combinar con Asakusa"]},
+    "namba":{"city":"osaka","mapId":"jp26-map-namba","photo":["Namba at night","Capas de neón y peatones","Noche"],"food":["Hanamaruken Namba","Ramen","¥¥","Confirmar","JP26 Pick"],"budget":"¥3,000–¥8,000","japanese":["Eki wa doko desu ka — ¿Dónde está la estación?"],"tips":["Base para regresar caminando","Guardar salida de estación"]},
+    "dotonbori":{"city":"osaka","mapId":"jp26-map-namba","photo":["Glico Sign","Encuadre desde el puente","Blue hour"],"food":["Dotonbori street food","Takoyaki / okonomiyaki","¥–¥¥","Noche","Area Pick"],"budget":"¥3,000–¥7,000","japanese":["Osusume wa nan desu ka — ¿Qué recomienda?"],"tips":["Caminar ambos lados del canal","Evitar horas más llenas"]},
+    "kaiyukan":{"city":"osaka","mapId":"jp26-map-osaka-bay","photo":["Osaka Bay","Siluetas y rueda de la fortuna","Sunset"],"food":["Tempozan Marketplace","Japanese food court","¥¥","Confirmar","Convenient"],"budget":"¥5,000–¥8,000","japanese":["Chiketto wa doko desu ka — ¿Dónde están los boletos?"],"tips":["Recorrer de arriba hacia abajo","Continuar a Tempozan"]},
+    "usj":{"city":"osaka","mapId":"","photo":["Super Nintendo World","Perspectiva amplia desde la entrada","Mañana"],"food":["Kinopio's Café","Theme park","¥¥¥","Con reserva","Mission Pick"],"budget":"¥20,000–¥30,000","japanese":["Yoyaku ga arimasu — Tengo reservación"],"tips":["Proteger la mañana","Usar la guía de actividad completa"]},
+    "higashiyama":{"city":"kyoto","mapId":"jp26-map-higashiyama","photo":["Yasaka Pagoda","Comprimir calle y pagoda","Temprano"],"food":["Soba en Higashiyama","Soba","¥¥","Confirmar","Area Pick"],"budget":"¥3,000–¥7,000","japanese":["Shashin wa daijōbu desu ka — ¿Se permiten fotos?"],"tips":["Kiyomizu temprano","Respetar calles privadas"]},
+    "arashiyama":{"city":"kyoto","mapId":"jp26-map-arashiyama","photo":["Arashiyama Bamboo","Líneas verticales y sendero limpio","Antes de 8:00 AM"],"food":["Yudofu en Arashiyama","Tofu cuisine","¥¥","Confirmar","Area Pick"],"budget":"¥3,000–¥7,000","japanese":["Kono michi de ii desu ka — ¿Es correcto este camino?"],"tips":["Bosque primero","Monkey Park es opcional"]},
+    "fushimi":{"city":"kyoto","mapId":"jp26-map-fushimi-inari","photo":["Senbon Torii","Buscar curvas para ocultar personas","Antes de 8:00 AM"],"food":["Fushimi snack stop","Japanese snacks","¥","Confirmar","Route Stop"],"budget":"¥2,000–¥5,000","japanese":["Yukkuri onegaishimasu — Despacio, por favor"],"tips":["Seguir subiendo","No correr en el sendero"]},
+    "gion":{"city":"kyoto","mapId":"jp26-map-gion","photo":["Gion de noche","Faroles, reflejos y distancia respetuosa","Blue hour"],"food":["Pontocho dinner","Japanese dinner","¥¥–¥¥¥","Noche","Area Pick"],"budget":"¥4,000–¥10,000","japanese":["Yoyaku ga arimasu — Tengo reservación"],"tips":["Fotografía responsable","Cerrar junto al río Kamo"]}
+  }
+}
